@@ -1,0 +1,11 @@
+Package: daasxpertclient
+Version: {xxx}
+Pre-Depends: apt-transport-https, dirmngr
+Depends: mono-complete, freerdp2-x11, virt-viewer, gtk-sharp2, libcanberra-gtk-module
+Suggests:
+Section:devel
+Priority: optional
+Architecture: all
+Maintainer: CROSSENT <crossent@crossent.com>
+Description: VDI Client Software resident on DaasXpert VM
+

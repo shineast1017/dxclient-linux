@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=DaaSXpertClientBiz
+Comment=VDI Client Software resident on DaasXpert VM
+Exec=mono "/usr/lib/DaaSXpertClient/client.exe" --config config_biz.ini --logname biz
+Icon=/usr/share/DaaSXpertClient/daasxpert_icon.png
+StartupNotify=true
+Terminal=false
+Type=Application
+Categories=GNOME;GTK;Development;IDE;
+
+

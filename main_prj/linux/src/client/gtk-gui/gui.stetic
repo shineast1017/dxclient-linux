@@ -1,0 +1,2996 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stetic-interface>
+  <configuration>
+    <images-root-path>..</images-root-path>
+    <target-gtk-version>2.4</target-gtk-version>
+  </configuration>
+  <import>
+    <widget-library name="glade-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
+    <widget-library name="../../../../../../../../../lib/monodevelop/AddIns/MonoDevelop.GtkCore/libstetic.dll" />
+    <widget-library name="../bin/Release/client.exe" internal="true" />
+  </import>
+  <icon-factory>
+    <icon-set id="_ADDSERVER">
+      <source>
+        <property name="Image">stock:gtk-cancel Menu</property>
+        <property name="State">Normal</property>
+      </source>
+      <source>
+        <property name="Image">stock:gtk-close Menu</property>
+        <property name="State">Prelight</property>
+      </source>
+      <source>
+        <property name="Image">stock:gtk-dialog-question Button</property>
+        <property name="State">Selected</property>
+      </source>
+      <source>
+        <property name="Image">stock:gtk-cdrom Button</property>
+        <property name="State">Active</property>
+      </source>
+      <source>
+        <property name="Image">stock:gtk-bold Button</property>
+        <property name="State">Insensitive</property>
+      </source>
+    </icon-set>
+  </icon-factory>
+  <widget class="Gtk.Window" id="MainWindow" design-size="1197 892">
+    <property name="MemberName" />
+    <property name="Title" translatable="yes">DaaSXpert Client</property>
+    <property name="Icon">resource:client.Resources.daasxpert.icon-48.png</property>
+    <property name="WindowPosition">CenterAlways</property>
+    <property name="Resizable">False</property>
+    <property name="AllowGrow">False</property>
+    <property name="DefaultWidth">788</property>
+    <property name="DefaultHeight">589</property>
+    <signal name="DeleteEvent" handler="OnDeleteEvent" />
+    <child>
+      <widget class="Gtk.VBox" id="vbox3">
+        <property name="MemberName" />
+        <property name="Spacing">6</property>
+        <child>
+          <widget class="Gtk.EventBox" id="eventboxTitlebar">
+            <property name="MemberName" />
+            <property name="HeightRequest">29</property>
+            <child>
+              <widget class="Gtk.Fixed" id="fixed7">
+                <property name="MemberName" />
+                <property name="HasWindow">False</property>
+                <child>
+                  <widget class="Gtk.Image" id="imageTitle">
+                    <property name="MemberName" />
+                    <property name="Pixbuf">resource:client.Resources.dassxpert_icon.png</property>
+                  </widget>
+                  <packing>
+                    <property name="X">14</property>
+                    <property name="Y">10</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="Gtk.Label" id="labelTitlebar">
+                    <property name="MemberName" />
+                    <property name="LabelProp" translatable="yes">DaaSXpert Client</property>
+                  </widget>
+                  <packing>
+                    <property name="X">34</property>
+                    <property name="Y">7</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="Gtk.EventBox" id="eventboxClose">
+                    <property name="MemberName" />
+                    <property name="WidthRequest">10</property>
+                    <property name="HeightRequest">10</property>
+                    <child>
+                      <widget class="Gtk.Image" id="imageClose">
+                        <property name="MemberName" />
+                        <property name="Pixbuf">resource:client.Resources.window_close.png</property>
+                      </widget>
+                    </child>
+                  </widget>
+                  <packing>
+                    <property name="X">745</property>
+                    <property name="Y">10</property>
+                  </packing>
+                </child>
+              </widget>
+            </child>
+          </widget>
+          <packing>
+            <property name="Position">0</property>
+            <property name="AutoSize">True</property>
+            <property name="Expand">False</property>
+            <property name="Fill">False</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.HBox" id="hbox2">
+            <property name="MemberName" />
+            <property name="Spacing">6</property>
+            <child>
+              <widget class="client.leftMenuWidget" id="leftmenuwidget1">
+                <property name="MemberName" />
+                <property name="WidthRequest">256</property>
+                <property name="HeightRequest">377</property>
+                <property name="Events">ButtonPressMask</property>
+              </widget>
+              <packing>
+                <property name="Position">0</property>
+                <property name="AutoSize">True</property>
+                <property name="Expand">False</property>
+                <property name="Fill">False</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.VBox" id="vboxPage">
+                <property name="MemberName" />
+                <property name="Spacing">6</property>
+                <child>
+                  <placeholder />
+                </child>
+                <child>
+                  <widget class="Gtk.EventBox" id="eventboxState">
+                    <property name="MemberName" />
+                    <child>
+                      <widget class="Gtk.Label" id="labelState">
+                        <property name="MemberName" />
+                        <property name="WidthRequest">513</property>
+                        <property name="HeightRequest">40</property>
+                        <property name="Xalign">0</property>
+                        <property name="Yalign">0</property>
+                        <property name="LabelProp" translatable="yes">DaaSXpert Client</property>
+                      </widget>
+                    </child>
+                  </widget>
+                  <packing>
+                    <property name="Position">1</property>
+                    <property name="AutoSize">True</property>
+                    <property name="Expand">False</property>
+                    <property name="Fill">False</property>
+                  </packing>
+                </child>
+              </widget>
+              <packing>
+                <property name="Position">1</property>
+                <property name="AutoSize">True</property>
+                <property name="Expand">False</property>
+                <property name="Fill">False</property>
+              </packing>
+            </child>
+          </widget>
+          <packing>
+            <property name="Position">1</property>
+            <property name="AutoSize">True</property>
+            <property name="Expand">False</property>
+            <property name="Fill">False</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Image" id="image28">
+            <property name="MemberName" />
+            <property name="WidthRequest">788</property>
+            <property name="HeightRequest">79</property>
+            <property name="Xalign">0</property>
+            <property name="Yalign">0</property>
+            <property name="Pixbuf">resource:client.Resources.banner.png</property>
+          </widget>
+          <packing>
+            <property name="Position">2</property>
+            <property name="AutoSize">False</property>
+            <property name="Fill">False</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+  </widget>
+  <widget class="Gtk.Bin" id="client.leftMenuWidget" design-size="300 410">
+    <property name="MemberName" />
+    <property name="WidthRequest">256</property>
+    <property name="HeightRequest">377</property>
+    <property name="Visible">False</property>
+    <child>
+      <widget class="Gtk.VBox" id="vbox4">
+        <property name="MemberName" />
+        <property name="Spacing">6</property>
+        <property name="BorderWidth">3</property>
+        <child>
+          <widget class="Gtk.VBox" id="vboxTitle">
+            <property name="MemberName" />
+            <property name="Spacing">6</property>
+            <child>
+              <widget class="Gtk.Fixed" id="fixed1">
+                <property name="MemberName" />
+                <property name="HeightRequest">1</property>
+                <property name="HasWindow">False</property>
+              </widget>
+              <packing>
+                <property name="Position">0</property>
+                <property name="AutoSize">True</property>
+                <property name="Expand">False</property>
+                <property name="Fill">False</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Image" id="image1">
+                <property name="MemberName" />
+                <property name="Pixbuf">resource:client.Resources.dassxpert_logo.png</property>
+              </widget>
+              <packing>
+                <property name="Position">1</property>
+                <property name="AutoSize">True</property>
+                <property name="Expand">False</property>
+                <property name="Fill">False</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Label" id="labelApplicationName">
+                <property name="MemberName" />
+                <property name="LabelProp" translatable="yes">Client Application</property>
+              </widget>
+              <packing>
+                <property name="Position">2</property>
+                <property name="AutoSize">True</property>
+                <property name="Expand">False</property>
+                <property name="Fill">False</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.EventBox" id="eventboxVersion">
+                <property name="MemberName" />
+                <signal name="ButtonPressEvent" handler="OnEventboxVersionButtonPressEvent" />
+                <child>
+                  <widget class="Gtk.Label" id="labelVersion">
+                    <property name="MemberName" />
+                    <property name="LabelProp" translatable="yes">VERSION</property>
+                  </widget>
+                </child>
+              </widget>
+              <packing>
+                <property name="Position">3</property>
+                <property name="AutoSize">True</property>
+                <property name="Expand">False</property>
+                <property name="Fill">False</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Fixed" id="fixed2">
+                <property name="MemberName" />
+                <property name="HeightRequest">15</property>
+                <property name="HasWindow">False</property>
+              </widget>
+              <packing>
+                <property name="Position">4</property>
+                <property name="AutoSize">True</property>
+                <property name="Expand">False</property>
+                <property name="Fill">False</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Label" id="labelCompany">
+                <property name="MemberName" />
+                <property name="LabelProp" translatable="yes">Crossent Co., Ltd.</property>
+              </widget>
+              <packing>
+                <property name="Position">5</property>
+                <property name="AutoSize">True</property>
+                <property name="Expand">False</property>
+                <property name="Fill">False</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Label" id="labelURL">
+                <property name="MemberName" />
+              </widget>
+              <packing>
+                <property name="Position">6</property>
+                <property name="AutoSize">True</property>
+                <property name="Expand">False</property>
+                <property name="Fill">False</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Fixed" id="fixed3">
+                <property name="MemberName" />
+                <property name="HeightRequest">10</property>
+                <property name="HasWindow">False</property>
+              </widget>
+              <packing>
+                <property name="Position">7</property>
+                <property name="AutoSize">True</property>
+                <property name="Expand">False</property>
+                <property name="Fill">False</property>
+              </packing>
+            </child>
+          </widget>
+          <packing>
+            <property name="Position">0</property>
+            <property name="AutoSize">True</property>
+            <property name="Expand">False</property>
+            <property name="Fill">False</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.VBox" id="vbox2">
+            <property name="MemberName" />
+            <property name="HeightRequest">170</property>
+            <property name="Spacing">6</property>
+            <child>
+              <widget class="client.leftMenuItemWidget" id="MainItem">
+                <property name="MemberName" />
+                <property name="HeightRequest">40</property>
+                <property name="Events">ButtonPressMask</property>
+                <property name="PageIdx">0</property>
+              </widget>
+              <packing>
+                <property name="Position">0</property>
+                <property name="AutoSize">True</property>
+                <property name="Expand">False</property>
+                <property name="Fill">False</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="client.leftMenuItemWidget" id="BookmarkItem">
+                <property name="MemberName" />
+                <property name="HeightRequest">40</property>
+                <property name="Events">ButtonPressMask</property>
+                <property name="PageIdx">0</property>
+              </widget>
+              <packing>
+                <property name="Position">1</property>
+                <property name="AutoSize">True</property>
+                <property name="Expand">False</property>
+                <property name="Fill">False</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="client.leftMenuItemWidget" id="SettingItem">
+                <property name="MemberName" />
+                <property name="HeightRequest">40</property>
+                <property name="Events">ButtonPressMask</property>
+                <property name="PageIdx">0</property>
+              </widget>
+              <packing>
+                <property name="Position">2</property>
+                <property name="AutoSize">True</property>
+                <property name="Expand">False</property>
+                <property name="Fill">False</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Button" id="button14">
+                <property name="MemberName" />
+                <property name="CanFocus">True</property>
+                <property name="Type">TextOnly</property>
+                <property name="Label">POWER OFF</property>
+                <property name="UseUnderline">True</property>
+                <signal name="Clicked" handler="OnPowerOffButtonClicked" after="yes" />
+              </widget>
+              <packing>
+                <property name="Position">3</property>
+                <property name="AutoSize">True</property>
+                <property name="Expand">False</property>
+                <property name="Fill">False</property>
+              </packing>
+            </child>
+          </widget>
+          <packing>
+            <property name="Position">1</property>
+            <property name="AutoSize">True</property>
+            <property name="Expand">False</property>
+            <property name="Fill">False</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+  </widget>
+  <widget class="Gtk.Bin" id="client.mainPageWidget" design-size="520 377">
+    <property name="MemberName" />
+    <property name="WidthRequest">520</property>
+    <property name="HeightRequest">377</property>
+    <property name="Visible">False</property>
+    <child>
+      <widget class="Gtk.HBox" id="hbox1">
+        <property name="MemberName" />
+        <property name="Spacing">6</property>
+        <child>
+          <widget class="Gtk.VBox" id="vboxServerlist">
+            <property name="MemberName" />
+            <property name="WidthRequest">256</property>
+            <property name="HeightRequest">377</property>
+            <property name="Spacing">6</property>
+            <child>
+              <placeholder />
+            </child>
+          </widget>
+          <packing>
+            <property name="Position">0</property>
+            <property name="AutoSize">True</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.VBox" id="vboxDesktoplist">
+            <property name="MemberName" />
+            <property name="WidthRequest">256</property>
+            <property name="HeightRequest">377</property>
+            <property name="Spacing">6</property>
+            <child>
+              <placeholder />
+            </child>
+          </widget>
+          <packing>
+            <property name="Position">1</property>
+            <property name="AutoSize">True</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+  </widget>
+  <widget class="Gtk.Bin" id="client.bookmarkPageWidget" design-size="512 377">
+    <property name="MemberName" />
+    <property name="WidthRequest">512</property>
+    <property name="HeightRequest">377</property>
+    <property name="Visible">False</property>
+    <child>
+      <widget class="Gtk.ScrolledWindow" id="scrolledwindow1">
+        <property name="MemberName" />
+        <property name="CanFocus">True</property>
+        <property name="HscrollbarPolicy">Never</property>
+        <property name="ShadowType">In</property>
+        <child>
+          <widget class="Gtk.Viewport" id="GtkViewport">
+            <property name="MemberName" />
+            <property name="ShadowType">None</property>
+            <child>
+              <widget class="Gtk.VBox" id="vboxBookmark">
+                <property name="MemberName" />
+                <property name="Spacing">6</property>
+                <child>
+                  <placeholder />
+                </child>
+                <child>
+                  <placeholder />
+                </child>
+                <child>
+                  <placeholder />
+                </child>
+              </widget>
+            </child>
+          </widget>
+        </child>
+      </widget>
+    </child>
+  </widget>
+  <widget class="Gtk.Bin" id="client.settingPageWidget" design-size="520 377">
+    <property name="MemberName" />
+    <property name="WidthRequest">520</property>
+    <property name="HeightRequest">377</property>
+    <property name="Visible">False</property>
+    <child>
+      <widget class="Gtk.Notebook" id="notebook1">
+        <property name="MemberName" />
+        <property name="CanFocus">True</property>
+        <property name="CurrentPage">0</property>
+        <child>
+          <widget class="Gtk.Fixed" id="fixed1">
+            <property name="MemberName" />
+            <property name="HasWindow">False</property>
+            <child>
+              <widget class="Gtk.Label" id="label3">
+                <property name="MemberName" />
+                <property name="LabelProp" translatable="yes">Language</property>
+              </widget>
+              <packing>
+                <property name="X">65</property>
+                <property name="Y">56</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Label" id="label4">
+                <property name="MemberName" />
+                <property name="LabelProp" translatable="yes">Network</property>
+              </widget>
+              <packing>
+                <property name="X">65</property>
+                <property name="Y">96</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Label" id="label5">
+                <property name="MemberName" />
+                <property name="LabelProp" translatable="yes">Enable Bookmark</property>
+              </widget>
+              <packing>
+                <property name="X">65</property>
+                <property name="Y">176</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Label" id="label6">
+                <property name="MemberName" />
+                <property name="LabelProp" translatable="yes">Auto Start</property>
+              </widget>
+              <packing>
+                <property name="X">65</property>
+                <property name="Y">216</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Label" id="labelServerName">
+                <property name="MemberName" />
+                <property name="LabelProp" translatable="yes">Server Name</property>
+              </widget>
+              <packing>
+                <property name="X">80</property>
+                <property name="Y">256</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Label" id="labelDesktopName">
+                <property name="MemberName" />
+                <property name="LabelProp" translatable="yes">Desktop Name</property>
+              </widget>
+              <packing>
+                <property name="X">80</property>
+                <property name="Y">296</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.ComboBox" id="cbxLang">
+                <property name="MemberName" />
+                <property name="IsTextCombo">True</property>
+                <property name="Items" translatable="yes">ko-KR
+en-US</property>
+                <property name="Active">0</property>
+                <signal name="Changed" handler="OnCbxLangChanged" />
+              </widget>
+              <packing>
+                <property name="X">234</property>
+                <property name="Y">51</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.ComboBox" id="cbxNetwork">
+                <property name="MemberName" />
+                <property name="IsTextCombo">True</property>
+                <property name="Items" translatable="yes" />
+                <signal name="Changed" handler="OnCbxNetworkChanged" />
+              </widget>
+              <packing>
+                <property name="X">234</property>
+                <property name="Y">91</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.RadioButton" id="radioEnableBookmarkOn">
+                <property name="MemberName" />
+                <property name="CanFocus">True</property>
+                <property name="Label" translatable="yes">On</property>
+                <property name="Active">True</property>
+                <property name="DrawIndicator">True</property>
+                <property name="HasLabel">True</property>
+                <property name="Group">GroupBookmark</property>
+                <signal name="Toggled" handler="OnRadioEnableBookmarkOnGroupChanged" />
+              </widget>
+              <packing>
+                <property name="X">234</property>
+                <property name="Y">176</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.RadioButton" id="radioEnableBookmarkOff">
+                <property name="MemberName" />
+                <property name="CanFocus">True</property>
+                <property name="Label" translatable="yes">Off</property>
+                <property name="DrawIndicator">True</property>
+                <property name="HasLabel">True</property>
+                <property name="Group">GroupBookmark</property>
+              </widget>
+              <packing>
+                <property name="X">320</property>
+                <property name="Y">176</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.RadioButton" id="radioAutoStartOn">
+                <property name="MemberName" />
+                <property name="CanFocus">True</property>
+                <property name="Label" translatable="yes">On</property>
+                <property name="Active">True</property>
+                <property name="DrawIndicator">True</property>
+                <property name="HasLabel">True</property>
+                <property name="Group">GroupAutoStart</property>
+                <signal name="Toggled" handler="OnRadioAutoStartOnGroupChanged" />
+              </widget>
+              <packing>
+                <property name="X">234</property>
+                <property name="Y">216</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.RadioButton" id="radioAutoStartOff">
+                <property name="MemberName" />
+                <property name="CanFocus">True</property>
+                <property name="Label" translatable="yes">Off</property>
+                <property name="DrawIndicator">True</property>
+                <property name="HasLabel">True</property>
+                <property name="Group">GroupAutoStart</property>
+              </widget>
+              <packing>
+                <property name="X">320</property>
+                <property name="Y">216</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Entry" id="tbxServerName">
+                <property name="MemberName" />
+                <property name="Sensitive">False</property>
+                <property name="CanFocus">True</property>
+                <property name="IsEditable">False</property>
+                <property name="InvisibleChar">•</property>
+              </widget>
+              <packing>
+                <property name="X">234</property>
+                <property name="Y">256</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Entry" id="tbxDesktopName">
+                <property name="MemberName" />
+                <property name="Sensitive">False</property>
+                <property name="CanFocus">True</property>
+                <property name="IsEditable">False</property>
+                <property name="InvisibleChar">•</property>
+              </widget>
+              <packing>
+                <property name="X">234</property>
+                <property name="Y">296</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Button" id="ButtonNetworkRefresh">
+                <property name="MemberName" />
+                <property name="Visible">False</property>
+                <property name="CanFocus">True</property>
+                <property name="Type">TextOnly</property>
+                <property name="Label" translatable="yes">Refresh</property>
+                <property name="UseUnderline">True</property>
+                <signal name="Clicked" handler="ClickNetworkRefresh" />
+              </widget>
+              <packing>
+                <property name="X">167</property>
+                <property name="Y">92</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.CheckButton" id="chkAutoClientIP">
+                <property name="MemberName" />
+                <property name="CanFocus">True</property>
+                <property name="Label" translatable="yes">Auto IP</property>
+                <property name="DrawIndicator">True</property>
+                <property name="HasLabel">True</property>
+                <property name="UseUnderline">True</property>
+                <signal name="Toggled" handler="OnChkAutoClientIPToggled" />
+              </widget>
+              <packing>
+                <property name="X">160</property>
+                <property name="Y">95</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.RadioButton" id="radioAutoReconnectOn">
+                <property name="MemberName" />
+                <property name="CanFocus">True</property>
+                <property name="Label" translatable="yes">On</property>
+                <property name="Active">True</property>
+                <property name="DrawIndicator">True</property>
+                <property name="HasLabel">True</property>
+                <property name="UseUnderline">True</property>
+                <property name="Group">GroupAutoReconnect</property>
+                <signal name="Toggled" handler="OnRadioAutoReconnectOnGroupChanged" />
+              </widget>
+              <packing>
+                <property name="X">234</property>
+                <property name="Y">136</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.RadioButton" id="radioAutoReconnectOff">
+                <property name="MemberName" />
+                <property name="CanFocus">True</property>
+                <property name="Label" translatable="yes">Off</property>
+                <property name="DrawIndicator">True</property>
+                <property name="HasLabel">True</property>
+                <property name="UseUnderline">True</property>
+                <property name="Group">GroupAutoReconnect</property>
+              </widget>
+              <packing>
+                <property name="X">320</property>
+                <property name="Y">136</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Label" id="label19">
+                <property name="MemberName" />
+                <property name="LabelProp" translatable="yes">Auto Reconnect</property>
+              </widget>
+              <packing>
+                <property name="X">65</property>
+                <property name="Y">136</property>
+              </packing>
+            </child>
+          </widget>
+        </child>
+        <child>
+          <widget class="Gtk.Label" id="label1">
+            <property name="MemberName" />
+            <property name="LabelProp" translatable="yes">General</property>
+          </widget>
+          <packing>
+            <property name="type">tab</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Fixed" id="fixed2">
+            <property name="MemberName" />
+            <property name="HasWindow">False</property>
+            <child>
+              <widget class="Gtk.Label" id="label10">
+                <property name="MemberName" />
+                <property name="LabelProp" translatable="yes">Dual Monitor</property>
+              </widget>
+              <packing>
+                <property name="X">65</property>
+                <property name="Y">56</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Label" id="label11">
+                <property name="MemberName" />
+                <property name="LabelProp" translatable="yes">Audio</property>
+              </widget>
+              <packing>
+                <property name="X">65</property>
+                <property name="Y">96</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Label" id="label12">
+                <property name="MemberName" />
+                <property name="LabelProp" translatable="yes">Protocol</property>
+              </widget>
+              <packing>
+                <property name="X">65</property>
+                <property name="Y">136</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Label" id="label13">
+                <property name="MemberName" />
+                <property name="LabelProp" translatable="yes">Resolution</property>
+              </widget>
+              <packing>
+                <property name="X">65</property>
+                <property name="Y">176</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Label" id="label14">
+                <property name="MemberName" />
+                <property name="LabelProp" translatable="yes">Speed</property>
+              </widget>
+              <packing>
+                <property name="X">65</property>
+                <property name="Y">256</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.RadioButton" id="radioDualOn">
+                <property name="MemberName" />
+                <property name="CanFocus">True</property>
+                <property name="Label" translatable="yes">On</property>
+                <property name="Active">True</property>
+                <property name="DrawIndicator">True</property>
+                <property name="HasLabel">True</property>
+                <property name="Group">group1</property>
+                <signal name="Toggled" handler="OnRadioDualOnGroupChanged" />
+              </widget>
+              <packing>
+                <property name="X">234</property>
+                <property name="Y">56</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.RadioButton" id="radioDualOff">
+                <property name="MemberName" />
+                <property name="CanFocus">True</property>
+                <property name="Label" translatable="yes">Off</property>
+                <property name="DrawIndicator">True</property>
+                <property name="HasLabel">True</property>
+                <property name="Group">group1</property>
+              </widget>
+              <packing>
+                <property name="X">320</property>
+                <property name="Y">56</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.RadioButton" id="radioAudioOn">
+                <property name="MemberName" />
+                <property name="CanFocus">True</property>
+                <property name="Label" translatable="yes">On</property>
+                <property name="Active">True</property>
+                <property name="DrawIndicator">True</property>
+                <property name="HasLabel">True</property>
+                <property name="Group">Group2</property>
+                <signal name="Toggled" handler="OnRadioAudioOnGroupChanged" />
+              </widget>
+              <packing>
+                <property name="X">234</property>
+                <property name="Y">96</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.RadioButton" id="radioAudioOff">
+                <property name="MemberName" />
+                <property name="CanFocus">True</property>
+                <property name="Label" translatable="yes">Off</property>
+                <property name="DrawIndicator">True</property>
+                <property name="HasLabel">True</property>
+                <property name="Group">Group2</property>
+              </widget>
+              <packing>
+                <property name="X">320</property>
+                <property name="Y">96</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.ComboBox" id="cbxProtocol">
+                <property name="MemberName" />
+                <property name="IsTextCombo">True</property>
+                <property name="Items" translatable="yes">RDP
+SPICE</property>
+                <property name="Active">0</property>
+                <signal name="Changed" handler="OnCbxProtocolChanged" />
+              </widget>
+              <packing>
+                <property name="X">234</property>
+                <property name="Y">136</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.ComboBox" id="cbxResolution">
+                <property name="MemberName" />
+                <property name="IsTextCombo">True</property>
+                <property name="Items" translatable="yes">600 X 480
+800 X 600
+1024 X 768
+1280 X 768
+1280 X 1024
+1440 X 900
+1600 X 900
+1600 X 1200
+1920 X 1080
+Full Screen</property>
+                <signal name="Changed" handler="OnCbxResolutionChanged" />
+              </widget>
+              <packing>
+                <property name="X">234</property>
+                <property name="Y">176</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.ComboBox" id="cbxSpeed">
+                <property name="MemberName" />
+                <property name="IsTextCombo">True</property>
+                <property name="Items" translatable="yes">auto
+modem
+broadband
+broadband-low
+broadband-high
+wan
+lan</property>
+                <signal name="Changed" handler="OnCbxSpeedChanged" />
+              </widget>
+              <packing>
+                <property name="X">234</property>
+                <property name="Y">256</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Label" id="label16">
+                <property name="MemberName" />
+                <property name="LabelProp" translatable="yes">Color Depth</property>
+              </widget>
+              <packing>
+                <property name="X">65</property>
+                <property name="Y">216</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.ComboBox" id="cbxColorDepth">
+                <property name="MemberName" />
+                <property name="IsTextCombo">True</property>
+                <property name="Items" translatable="yes">High Color(15 bpp)
+High Color(16 bpp)
+True Color(24 bpp)
+True Color(32 bpp)</property>
+                <signal name="Changed" handler="OnCbxColorDepthChanged" />
+              </widget>
+              <packing>
+                <property name="X">234</property>
+                <property name="Y">216</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.CheckButton" id="chkDynamicResolutionUpdate">
+                <property name="MemberName" />
+                <property name="CanFocus">True</property>
+                <property name="Label" translatable="yes">DynamicResolution</property>
+                <property name="DrawIndicator">True</property>
+                <property name="HasLabel">True</property>
+                <property name="UseUnderline">True</property>
+                <signal name="Toggled" handler="OnChkDynamicResolutionUpdateToggled" />
+              </widget>
+              <packing>
+                <property name="X">360</property>
+                <property name="Y">176</property>
+              </packing>
+            </child>
+          </widget>
+          <packing>
+            <property name="Position">1</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Label" id="label9">
+            <property name="MemberName" />
+            <property name="LabelProp" translatable="yes">Desktop</property>
+          </widget>
+          <packing>
+            <property name="type">tab</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Fixed" id="fixed3">
+            <property name="MemberName" />
+            <property name="HasWindow">False</property>
+            <child>
+              <widget class="Gtk.Label" id="label7">
+                <property name="MemberName" />
+                <property name="LabelProp" translatable="yes">Redirect</property>
+              </widget>
+              <packing>
+                <property name="X">65</property>
+                <property name="Y">56</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Label" id="label8">
+                <property name="MemberName" />
+                <property name="LabelProp" translatable="yes">Performance</property>
+              </widget>
+              <packing>
+                <property name="X">65</property>
+                <property name="Y">152</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Label" id="label15">
+                <property name="MemberName" />
+                <property name="Visible">False</property>
+                <property name="LabelProp" translatable="yes">Audio Capture</property>
+              </widget>
+              <packing>
+                <property name="X">65</property>
+                <property name="Y">192</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.CheckButton" id="chkClipboard">
+                <property name="MemberName" />
+                <property name="CanFocus">True</property>
+                <property name="Label" translatable="yes">Clipboard</property>
+                <property name="DrawIndicator">True</property>
+                <property name="HasLabel">True</property>
+                <signal name="Toggled" handler="OnChkClipboardToggled" />
+              </widget>
+              <packing>
+                <property name="X">234</property>
+                <property name="Y">56</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.CheckButton" id="chkLocalPrinter">
+                <property name="MemberName" />
+                <property name="CanFocus">True</property>
+                <property name="Label" translatable="yes">Local Printer</property>
+                <property name="DrawIndicator">True</property>
+                <property name="HasLabel">True</property>
+                <signal name="Toggled" handler="OnChkLocalPrinterToggled" />
+              </widget>
+              <packing>
+                <property name="X">350</property>
+                <property name="Y">56</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.CheckButton" id="chkLocalDriver">
+                <property name="MemberName" />
+                <property name="CanFocus">True</property>
+                <property name="Label" translatable="yes">Local Driver</property>
+                <property name="DrawIndicator">True</property>
+                <property name="HasLabel">True</property>
+                <signal name="Toggled" handler="OnChkLocalDriverToggled" />
+              </widget>
+              <packing>
+                <property name="X">234</property>
+                <property name="Y">78</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.CheckButton" id="chkLocalDevice">
+                <property name="MemberName" />
+                <property name="CanFocus">True</property>
+                <property name="Label" translatable="yes">Local Device</property>
+                <property name="DrawIndicator">True</property>
+                <property name="HasLabel">True</property>
+                <signal name="Toggled" handler="OnChkLocalDeviceToggled" />
+              </widget>
+              <packing>
+                <property name="X">350</property>
+                <property name="Y">100</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.CheckButton" id="chkLocalPort">
+                <property name="MemberName" />
+                <property name="CanFocus">True</property>
+                <property name="Label" translatable="yes">Local Port</property>
+                <property name="DrawIndicator">True</property>
+                <property name="HasLabel">True</property>
+                <signal name="Toggled" handler="OnChkLocalPortToggled" />
+              </widget>
+              <packing>
+                <property name="X">234</property>
+                <property name="Y">100</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.CheckButton" id="chkSmartCard">
+                <property name="MemberName" />
+                <property name="CanFocus">True</property>
+                <property name="Label" translatable="yes">Smart Card</property>
+                <property name="DrawIndicator">True</property>
+                <property name="HasLabel">True</property>
+                <signal name="Toggled" handler="OnChkSmartCardToggled" />
+              </widget>
+              <packing>
+                <property name="X">350</property>
+                <property name="Y">78</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.CheckButton" id="chkBitmapCaching">
+                <property name="MemberName" />
+                <property name="CanFocus">True</property>
+                <property name="Label" translatable="yes">Bitmap Caching</property>
+                <property name="DrawIndicator">True</property>
+                <property name="HasLabel">True</property>
+                <signal name="Toggled" handler="OnChkBitmapCachingToggled" />
+              </widget>
+              <packing>
+                <property name="X">234</property>
+                <property name="Y">152</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.CheckButton" id="chkMicrophone">
+                <property name="MemberName" />
+                <property name="CanFocus">True</property>
+                <property name="Label" translatable="yes">Local Microphone</property>
+                <property name="DrawIndicator">True</property>
+                <property name="HasLabel">True</property>
+                <signal name="Toggled" handler="OnChkMicrophoneToggled" />
+              </widget>
+              <packing>
+                <property name="X">234</property>
+                <property name="Y">192</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.CheckButton" id="chkVideoCaptureDevice">
+                <property name="MemberName" />
+                <property name="CanFocus">True</property>
+                <property name="Label" translatable="yes" context="yes">비디오 캡쳐 장치|Video Capture Device</property>
+                <property name="DrawIndicator">True</property>
+                <property name="HasLabel">True</property>
+                <property name="UseUnderline">True</property>
+                <signal name="Toggled" handler="OnChkVideoCaptureDeviceToggled" />
+              </widget>
+              <packing>
+                <property name="X">234</property>
+                <property name="Y">122</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.CheckButton" id="chkUseRDPEcam">
+                <property name="MemberName" />
+                <property name="CanFocus">True</property>
+                <property name="Label" translatable="yes">Use RDPECAM</property>
+                <property name="DrawIndicator">True</property>
+                <property name="HasLabel">True</property>
+                <property name="UseUnderline">True</property>
+                <signal name="Toggled" handler="OnChkUseRDPEcamToggled" />
+              </widget>
+              <packing>
+                <property name="X">234</property>
+                <property name="Y">232</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Label" id="label17">
+                <property name="MemberName" />
+                <property name="LabelProp" translatable="yes">Webcam setting</property>
+              </widget>
+              <packing>
+                <property name="X">65</property>
+                <property name="Y">235</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.CheckButton" id="chkUseH264">
+                <property name="MemberName" />
+                <property name="CanFocus">True</property>
+                <property name="Label" translatable="yes">Use H264</property>
+                <property name="DrawIndicator">True</property>
+                <property name="HasLabel">True</property>
+                <property name="UseUnderline">True</property>
+                <signal name="Toggled" handler="OnChkUseH264Toggled" />
+              </widget>
+              <packing>
+                <property name="X">234</property>
+                <property name="Y">254</property>
+              </packing>
+            </child>
+          </widget>
+          <packing>
+            <property name="Position">2</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Label" id="label2">
+            <property name="MemberName" />
+            <property name="LabelProp" translatable="yes">Resource</property>
+          </widget>
+          <packing>
+            <property name="type">tab</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Fixed" id="fixed4">
+            <property name="MemberName" />
+            <property name="HasWindow">False</property>
+            <child>
+              <widget class="Gtk.Label" id="label18">
+                <property name="MemberName" />
+                <property name="LabelProp" translatable="yes">General</property>
+              </widget>
+              <packing>
+                <property name="X">65</property>
+                <property name="Y">56</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.CheckButton" id="chkExtRDPViewer">
+                <property name="MemberName" />
+                <property name="CanFocus">True</property>
+                <property name="Label" translatable="yes">Use External RDPViewer</property>
+                <property name="DrawIndicator">True</property>
+                <property name="HasLabel">True</property>
+                <property name="UseUnderline">True</property>
+                <signal name="Toggled" handler="OnChkExtRDPViewerToggled" />
+              </widget>
+              <packing>
+                <property name="X">234</property>
+                <property name="Y">56</property>
+              </packing>
+            </child>
+          </widget>
+          <packing>
+            <property name="Position">3</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Label" id="label20">
+            <property name="MemberName" />
+            <property name="LabelProp" translatable="yes">Others</property>
+          </widget>
+          <packing>
+            <property name="type">tab</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+  </widget>
+  <widget class="Gtk.Bin" id="client.serverlistWidget" design-size="300 442">
+    <property name="MemberName" />
+    <property name="WidthRequest">256</property>
+    <property name="HeightRequest">377</property>
+    <property name="Visible">False</property>
+    <child>
+      <widget class="Gtk.VBox" id="vbox2">
+        <property name="MemberName" />
+        <property name="Spacing">6</property>
+        <child>
+          <widget class="Gtk.EventBox" id="eventboxServerlist">
+            <property name="MemberName" />
+            <child>
+              <widget class="Gtk.VBox" id="vbox5">
+                <property name="MemberName" />
+                <property name="Spacing">6</property>
+                <child>
+                  <widget class="Gtk.ScrolledWindow" id="scrollServerlist">
+                    <property name="MemberName" />
+                    <property name="Visible">False</property>
+                    <property name="CanFocus">True</property>
+                    <property name="HscrollbarPolicy">Never</property>
+                    <signal name="ButtonPressEvent" handler="OnScrollServerlistButtonPressEvent" />
+                    <child>
+                      <widget class="Gtk.Viewport" id="GtkViewport">
+                        <property name="MemberName" />
+                        <property name="ShadowType">None</property>
+                        <child>
+                          <widget class="Gtk.VBox" id="vboxServerlist">
+                            <property name="MemberName" />
+                            <property name="Spacing">6</property>
+                            <child>
+                              <placeholder />
+                            </child>
+                            <child>
+                              <placeholder />
+                            </child>
+                            <child>
+                              <placeholder />
+                            </child>
+                          </widget>
+                        </child>
+                      </widget>
+                    </child>
+                  </widget>
+                  <packing>
+                    <property name="Position">0</property>
+                    <property name="AutoSize">True</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="Gtk.Button" id="btnAddServer">
+                    <property name="MemberName" />
+                    <property name="HeightRequest">50</property>
+                    <property name="CanFocus">True</property>
+                    <property name="Type">TextAndIcon</property>
+                    <property name="Icon">resource:client.Resources.icon_add_enable.png</property>
+                    <property name="Label" translatable="yes">ADD SERVER</property>
+                    <signal name="Clicked" handler="OnbtnAddServerClicked" />
+                  </widget>
+                  <packing>
+                    <property name="PackType">End</property>
+                    <property name="Position">1</property>
+                    <property name="AutoSize">True</property>
+                    <property name="Expand">False</property>
+                    <property name="Fill">False</property>
+                  </packing>
+                </child>
+              </widget>
+            </child>
+          </widget>
+          <packing>
+            <property name="Position">0</property>
+            <property name="AutoSize">True</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+  </widget>
+  <widget class="Gtk.Bin" id="client.addServerPageWidget" design-size="300 377">
+    <property name="MemberName" />
+    <property name="WidthRequest">256</property>
+    <property name="HeightRequest">377</property>
+    <property name="Visible">False</property>
+    <child>
+      <widget class="Gtk.EventBox" id="eventbox2">
+        <property name="MemberName" />
+        <child>
+          <widget class="Gtk.Fixed" id="fixed1">
+            <property name="MemberName" />
+            <property name="HasWindow">False</property>
+            <child>
+              <widget class="Gtk.Label" id="labelTitle">
+                <property name="MemberName" />
+                <property name="WidthRequest">150</property>
+                <property name="HeightRequest">24</property>
+                <property name="Xalign">0</property>
+                <property name="LabelProp" translatable="yes">&lt;span size='14000'&gt;Add Server&lt;/span&gt;</property>
+                <property name="UseMarkup">True</property>
+              </widget>
+              <packing>
+                <property name="X">80</property>
+                <property name="Y">28</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Label" id="label2">
+                <property name="MemberName" />
+                <property name="WidthRequest">98</property>
+                <property name="HeightRequest">32</property>
+                <property name="Xalign">0</property>
+                <property name="LabelProp" translatable="yes">Server Name</property>
+              </widget>
+              <packing>
+                <property name="X">10</property>
+                <property name="Y">69</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Label" id="label3">
+                <property name="MemberName" />
+                <property name="WidthRequest">98</property>
+                <property name="HeightRequest">24</property>
+                <property name="Xalign">0</property>
+                <property name="LabelProp" translatable="yes">Server IP</property>
+              </widget>
+              <packing>
+                <property name="X">10</property>
+                <property name="Y">109</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Label" id="label4">
+                <property name="MemberName" />
+                <property name="WidthRequest">98</property>
+                <property name="HeightRequest">24</property>
+                <property name="Xalign">0</property>
+                <property name="LabelProp" translatable="yes">Server Port</property>
+              </widget>
+              <packing>
+                <property name="X">10</property>
+                <property name="Y">149</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Entry" id="tbxServerName">
+                <property name="MemberName" />
+                <property name="WidthRequest">136</property>
+                <property name="HeightRequest">32</property>
+                <property name="CanFocus">True</property>
+                <property name="IsEditable">True</property>
+                <property name="InvisibleChar">•</property>
+              </widget>
+              <packing>
+                <property name="X">110</property>
+                <property name="Y">69</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Entry" id="tbxServerIP">
+                <property name="MemberName" />
+                <property name="WidthRequest">136</property>
+                <property name="HeightRequest">32</property>
+                <property name="CanFocus">True</property>
+                <property name="IsEditable">True</property>
+                <property name="InvisibleChar">•</property>
+              </widget>
+              <packing>
+                <property name="X">110</property>
+                <property name="Y">109</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Entry" id="tbxServerPort">
+                <property name="MemberName" />
+                <property name="WidthRequest">136</property>
+                <property name="HeightRequest">32</property>
+                <property name="CanFocus">True</property>
+                <property name="IsEditable">True</property>
+                <property name="InvisibleChar">•</property>
+              </widget>
+              <packing>
+                <property name="X">110</property>
+                <property name="Y">149</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Button" id="btnCancel">
+                <property name="MemberName" />
+                <property name="WidthRequest">100</property>
+                <property name="HeightRequest">34</property>
+                <property name="CanFocus">True</property>
+                <property name="Type">TextOnly</property>
+                <property name="Label" translatable="yes">CANCEL</property>
+                <signal name="Clicked" handler="OnBtnCancelAddServerClicked" />
+              </widget>
+              <packing>
+                <property name="X">25</property>
+                <property name="Y">293</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Button" id="btnAdd">
+                <property name="MemberName" />
+                <property name="WidthRequest">100</property>
+                <property name="HeightRequest">34</property>
+                <property name="CanFocus">True</property>
+                <property name="Type">TextOnly</property>
+                <property name="Label" translatable="yes">ADD</property>
+                <signal name="Clicked" handler="OnBtnOKAddServerClicked" />
+              </widget>
+              <packing>
+                <property name="X">131</property>
+                <property name="Y">293</property>
+              </packing>
+            </child>
+          </widget>
+        </child>
+      </widget>
+    </child>
+  </widget>
+  <widget class="Gtk.Bin" id="client.serverItemWidget" design-size="300 312">
+    <property name="MemberName" />
+    <property name="WidthRequest">200</property>
+    <property name="Visible">False</property>
+    <child>
+      <widget class="Gtk.EventBox" id="eventbox">
+        <property name="MemberName" />
+        <signal name="ButtonPressEvent" handler="OnEventboxButtonPressEvent" />
+        <signal name="EnterNotifyEvent" handler="OnEventboxEnterNotifyEvent" />
+        <signal name="LeaveNotifyEvent" handler="OnEventboxLeaveNotifyEvent" />
+        <child>
+          <widget class="Gtk.VBox" id="vbox10">
+            <property name="MemberName" />
+            <property name="Spacing">6</property>
+            <child>
+              <widget class="Gtk.Fixed" id="fixedDefault">
+                <property name="MemberName" />
+                <property name="WidthRequest">256</property>
+                <property name="HeightRequest">70</property>
+                <property name="HasWindow">False</property>
+                <child>
+                  <widget class="Gtk.Image" id="imageServer">
+                    <property name="MemberName" />
+                    <property name="Pixbuf">resource:client.Resources.icon_broker_enable.png</property>
+                  </widget>
+                  <packing>
+                    <property name="X">12</property>
+                    <property name="Y">30</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="Gtk.Label" id="labelServerIP">
+                    <property name="MemberName" />
+                    <property name="WidthRequest">100</property>
+                    <property name="Xalign">0</property>
+                    <property name="LabelProp" translatable="yes">label3</property>
+                  </widget>
+                  <packing>
+                    <property name="X">45</property>
+                    <property name="Y">40</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="Gtk.EventBox" id="eventboxPort">
+                    <property name="MemberName" />
+                    <child>
+                      <widget class="Gtk.Label" id="labelServerPort">
+                        <property name="MemberName" />
+                        <property name="WidthRequest">50</property>
+                        <property name="LabelProp" translatable="yes">label4</property>
+                      </widget>
+                    </child>
+                  </widget>
+                  <packing>
+                    <property name="X">153</property>
+                    <property name="Y">41</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="Gtk.Image" id="imageArrow">
+                    <property name="MemberName" />
+                    <property name="Pixbuf">resource:client.Resources.server_arrow_enable.png</property>
+                  </widget>
+                  <packing>
+                    <property name="X">227</property>
+                    <property name="Y">35</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="Gtk.Label" id="labelServerName">
+                    <property name="MemberName" />
+                    <property name="WidthRequest">160</property>
+                    <property name="Xalign">0</property>
+                    <property name="LabelProp" translatable="yes">&lt;span size='15000'&gt;big text&lt;/span&gt;</property>
+                    <property name="UseMarkup">True</property>
+                  </widget>
+                  <packing>
+                    <property name="X">43</property>
+                    <property name="Y">16</property>
+                  </packing>
+                </child>
+              </widget>
+              <packing>
+                <property name="Position">0</property>
+                <property name="AutoSize">True</property>
+                <property name="Expand">False</property>
+                <property name="Fill">False</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Fixed" id="fixedDetail">
+                <property name="MemberName" />
+                <property name="HeightRequest">75</property>
+                <property name="HasWindow">False</property>
+                <child>
+                  <widget class="Gtk.Label" id="labelConnectedTime">
+                    <property name="MemberName" />
+                    <property name="WidthRequest">120</property>
+                    <property name="HeightRequest">14</property>
+                    <property name="Xalign">0</property>
+                    <property name="LabelProp" translatable="yes">&lt;span size='9000'&gt;Last Access Time&lt;/span&gt;</property>
+                    <property name="UseMarkup">True</property>
+                  </widget>
+                  <packing>
+                    <property name="Y">5</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="Gtk.Label" id="labelServerStatus">
+                    <property name="MemberName" />
+                    <property name="WidthRequest">100</property>
+                    <property name="HeightRequest">14</property>
+                    <property name="Xalign">0</property>
+                    <property name="LabelProp" translatable="yes">&lt;span size='9000'&gt;Server State&lt;/span&gt;</property>
+                    <property name="UseMarkup">True</property>
+                  </widget>
+                  <packing>
+                    <property name="Y">22</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="Gtk.Label" id="labelServerState">
+                    <property name="MemberName" />
+                    <property name="WidthRequest">150</property>
+                    <property name="Xalign">0</property>
+                    <property name="LabelProp" translatable="yes">&lt;span size='9000'&gt;label&lt;/span&gt;</property>
+                    <property name="UseMarkup">True</property>
+                  </widget>
+                  <packing>
+                    <property name="X">115</property>
+                    <property name="Y">22</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="Gtk.Button" id="btnRemove">
+                    <property name="MemberName" />
+                    <property name="WidthRequest">85</property>
+                    <property name="HeightRequest">36</property>
+                    <property name="CanFocus">True</property>
+                    <property name="Type">TextOnly</property>
+                    <property name="Label" translatable="yes">REMOVE</property>
+                    <signal name="Clicked" handler="OnBtnRemoveClicked" />
+                  </widget>
+                  <packing>
+                    <property name="Y">40</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="Gtk.Button" id="btnEdit">
+                    <property name="MemberName" />
+                    <property name="WidthRequest">85</property>
+                    <property name="HeightRequest">36</property>
+                    <property name="CanFocus">True</property>
+                    <property name="Type">TextOnly</property>
+                    <property name="Label" translatable="yes">EDIT</property>
+                    <signal name="Clicked" handler="OnBtnEditClicked" />
+                  </widget>
+                  <packing>
+                    <property name="X">84</property>
+                    <property name="Y">40</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="Gtk.Button" id="btnLogIn">
+                    <property name="MemberName" />
+                    <property name="WidthRequest">85</property>
+                    <property name="HeightRequest">36</property>
+                    <property name="CanFocus">True</property>
+                    <property name="Type">TextOnly</property>
+                    <property name="Label" translatable="yes">LOGIN</property>
+                    <signal name="Clicked" handler="OnBtnLogInClicked" />
+                  </widget>
+                  <packing>
+                    <property name="X">169</property>
+                    <property name="Y">40</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="Gtk.Label" id="labelConnectedTimeValue">
+                    <property name="MemberName" />
+                    <property name="WidthRequest">150</property>
+                    <property name="Xalign">0</property>
+                    <property name="LabelProp" translatable="yes">&lt;span size='9000'&gt;label&lt;/span&gt;</property>
+                    <property name="UseMarkup">True</property>
+                  </widget>
+                  <packing>
+                    <property name="X">115</property>
+                    <property name="Y">5</property>
+                  </packing>
+                </child>
+              </widget>
+              <packing>
+                <property name="Position">1</property>
+                <property name="AutoSize">True</property>
+                <property name="Expand">False</property>
+                <property name="Fill">False</property>
+              </packing>
+            </child>
+          </widget>
+        </child>
+      </widget>
+    </child>
+  </widget>
+  <widget class="Gtk.Bin" id="client.logInWidget" design-size="300 377">
+    <property name="MemberName" />
+    <property name="Visible">False</property>
+    <child>
+      <widget class="Gtk.EventBox" id="eventbox3">
+        <property name="MemberName" />
+        <child>
+          <widget class="Gtk.Fixed" id="fixed1">
+            <property name="MemberName" />
+            <property name="WidthRequest">256</property>
+            <property name="HeightRequest">377</property>
+            <property name="HasWindow">False</property>
+            <child>
+              <widget class="Gtk.Label" id="label10">
+                <property name="MemberName" />
+                <property name="LabelProp" translatable="yes">&lt;span size='14000'&gt;Login&lt;/span&gt;</property>
+                <property name="UseMarkup">True</property>
+              </widget>
+              <packing>
+                <property name="X">107</property>
+                <property name="Y">24</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Label" id="label11">
+                <property name="MemberName" />
+                <property name="LabelProp" translatable="yes">Server Name</property>
+              </widget>
+              <packing>
+                <property name="X">10</property>
+                <property name="Y">69</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Label" id="label12">
+                <property name="MemberName" />
+                <property name="LabelProp" translatable="yes">Server IP</property>
+              </widget>
+              <packing>
+                <property name="X">10</property>
+                <property name="Y">109</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Label" id="label13">
+                <property name="MemberName" />
+                <property name="LabelProp" translatable="yes">Server Port</property>
+              </widget>
+              <packing>
+                <property name="X">10</property>
+                <property name="Y">149</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Label" id="label14">
+                <property name="MemberName" />
+                <property name="LabelProp" translatable="yes">User ID</property>
+              </widget>
+              <packing>
+                <property name="X">10</property>
+                <property name="Y">189</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Label" id="label15">
+                <property name="MemberName" />
+                <property name="LabelProp" translatable="yes">Password</property>
+              </widget>
+              <packing>
+                <property name="X">10</property>
+                <property name="Y">229</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Entry" id="tbxServerName">
+                <property name="MemberName" />
+                <property name="WidthRequest">136</property>
+                <property name="Sensitive">False</property>
+                <property name="CanFocus">True</property>
+                <property name="IsEditable">True</property>
+                <property name="InvisibleChar">•</property>
+              </widget>
+              <packing>
+                <property name="X">113</property>
+                <property name="Y">69</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Entry" id="tbxServerIP">
+                <property name="MemberName" />
+                <property name="WidthRequest">136</property>
+                <property name="Sensitive">False</property>
+                <property name="CanFocus">True</property>
+                <property name="IsEditable">True</property>
+                <property name="InvisibleChar">•</property>
+              </widget>
+              <packing>
+                <property name="X">113</property>
+                <property name="Y">109</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Entry" id="tbxServerPort">
+                <property name="MemberName" />
+                <property name="WidthRequest">136</property>
+                <property name="Sensitive">False</property>
+                <property name="CanFocus">True</property>
+                <property name="IsEditable">True</property>
+                <property name="InvisibleChar">•</property>
+              </widget>
+              <packing>
+                <property name="X">113</property>
+                <property name="Y">149</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Entry" id="tbxUserID">
+                <property name="MemberName" />
+                <property name="WidthRequest">136</property>
+                <property name="CanFocus">True</property>
+                <property name="IsEditable">True</property>
+                <property name="InvisibleChar">•</property>
+                <signal name="KeyPressEvent" handler="OnTbxUserIDKeyPressEvent" />
+              </widget>
+              <packing>
+                <property name="X">113</property>
+                <property name="Y">189</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Entry" id="tbxPassword">
+                <property name="MemberName" />
+                <property name="WidthRequest">136</property>
+                <property name="CanFocus">True</property>
+                <property name="IsEditable">True</property>
+                <property name="Visibility">False</property>
+                <property name="InvisibleChar">•</property>
+                <signal name="KeyPressEvent" handler="OnTbxPasswordKeyPressEvent" />
+              </widget>
+              <packing>
+                <property name="X">113</property>
+                <property name="Y">229</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Button" id="btnCancel">
+                <property name="MemberName" />
+                <property name="WidthRequest">100</property>
+                <property name="HeightRequest">34</property>
+                <property name="CanFocus">True</property>
+                <property name="Type">TextOnly</property>
+                <property name="Label" translatable="yes">CANCEL</property>
+                <signal name="Clicked" handler="OnBtnCancelClicked" />
+              </widget>
+              <packing>
+                <property name="X">25</property>
+                <property name="Y">300</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Button" id="btnLogin">
+                <property name="MemberName" />
+                <property name="WidthRequest">100</property>
+                <property name="HeightRequest">34</property>
+                <property name="CanFocus">True</property>
+                <property name="Type">TextOnly</property>
+                <property name="Label" translatable="yes">LOGIN</property>
+                <signal name="Clicked" handler="OnBtnLoginClicked" />
+              </widget>
+              <packing>
+                <property name="X">131</property>
+                <property name="Y">300</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.CheckButton" id="chkIDSave">
+                <property name="MemberName" />
+                <property name="CanFocus">True</property>
+                <property name="Label" translatable="yes">Remember ID</property>
+                <property name="DrawIndicator">True</property>
+                <property name="HasLabel">True</property>
+                <property name="UseUnderline">True</property>
+              </widget>
+              <packing>
+                <property name="X">10</property>
+                <property name="Y">269</property>
+              </packing>
+            </child>
+          </widget>
+        </child>
+      </widget>
+    </child>
+  </widget>
+  <widget class="Gtk.Bin" id="client.editDesktopPageWidget" design-size="300 377">
+    <property name="MemberName" />
+    <property name="Visible">False</property>
+    <child>
+      <widget class="Gtk.EventBox" id="eventbox4">
+        <property name="MemberName" />
+        <child>
+          <widget class="Gtk.Fixed" id="fixed2">
+            <property name="MemberName" />
+            <property name="WidthRequest">256</property>
+            <property name="HeightRequest">377</property>
+            <property name="HasWindow">False</property>
+            <child>
+              <widget class="Gtk.Label" id="label19">
+                <property name="MemberName" />
+                <property name="LabelProp" translatable="yes">Name</property>
+              </widget>
+              <packing>
+                <property name="X">12</property>
+                <property name="Y">50</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Label" id="label20">
+                <property name="MemberName" />
+                <property name="LabelProp" translatable="yes">IP</property>
+              </widget>
+              <packing>
+                <property name="X">12</property>
+                <property name="Y">82</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Label" id="label21">
+                <property name="MemberName" />
+                <property name="LabelProp" translatable="yes">Type</property>
+              </widget>
+              <packing>
+                <property name="X">12</property>
+                <property name="Y">114</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Label" id="label22">
+                <property name="MemberName" />
+                <property name="LabelProp" translatable="yes">Protocol</property>
+              </widget>
+              <packing>
+                <property name="X">12</property>
+                <property name="Y">144</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Label" id="label23">
+                <property name="MemberName" />
+                <property name="LabelProp" translatable="yes">Resolution</property>
+              </widget>
+              <packing>
+                <property name="X">12</property>
+                <property name="Y">174</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Label" id="label24">
+                <property name="MemberName" />
+                <property name="LabelProp" translatable="yes">Audio</property>
+              </widget>
+              <packing>
+                <property name="X">12</property>
+                <property name="Y">204</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Label" id="label25">
+                <property name="MemberName" />
+                <property name="LabelProp" translatable="yes">Speed</property>
+              </widget>
+              <packing>
+                <property name="X">12</property>
+                <property name="Y">234</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Entry" id="tbxIP">
+                <property name="MemberName" />
+                <property name="CanFocus">True</property>
+                <property name="IsEditable">False</property>
+                <property name="InvisibleChar">•</property>
+              </widget>
+              <packing>
+                <property name="X">93</property>
+                <property name="Y">80</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Entry" id="tbxType">
+                <property name="MemberName" />
+                <property name="CanFocus">True</property>
+                <property name="IsEditable">False</property>
+                <property name="InvisibleChar">•</property>
+              </widget>
+              <packing>
+                <property name="X">93</property>
+                <property name="Y">110</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.ComboBox" id="cbxProtocol">
+                <property name="MemberName" />
+                <property name="IsTextCombo">True</property>
+                <property name="Items" translatable="yes">RDP
+SPICE</property>
+                <property name="Active">0</property>
+              </widget>
+              <packing>
+                <property name="X">93</property>
+                <property name="Y">140</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.ComboBox" id="cbxResolution">
+                <property name="MemberName" />
+                <property name="IsTextCombo">True</property>
+                <property name="Items" translatable="yes">600 X 480
+800 X 600
+1024 X 768
+1280 X 768
+1280 X 1024
+1440 X 900
+1600 X 900
+1600 X 1200
+1920 X 1080
+Full Screen</property>
+                <property name="Active">0</property>
+              </widget>
+              <packing>
+                <property name="X">93</property>
+                <property name="Y">170</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.RadioButton" id="radioAudioOn">
+                <property name="MemberName" />
+                <property name="CanFocus">True</property>
+                <property name="Label" translatable="yes">on</property>
+                <property name="DrawIndicator">True</property>
+                <property name="HasLabel">True</property>
+                <property name="Group">group1</property>
+              </widget>
+              <packing>
+                <property name="X">93</property>
+                <property name="Y">200</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.RadioButton" id="radioAudioOff">
+                <property name="MemberName" />
+                <property name="CanFocus">True</property>
+                <property name="Label" translatable="yes">off</property>
+                <property name="DrawIndicator">True</property>
+                <property name="HasLabel">True</property>
+                <property name="Group">group1</property>
+              </widget>
+              <packing>
+                <property name="X">143</property>
+                <property name="Y">200</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.ComboBox" id="cbxSpeed">
+                <property name="MemberName" />
+                <property name="IsTextCombo">True</property>
+                <property name="Items" translatable="yes">auto
+modem
+broadband
+broadband-low
+broadband-high
+wan
+lan</property>
+              </widget>
+              <packing>
+                <property name="X">93</property>
+                <property name="Y">230</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Button" id="btnCancel">
+                <property name="MemberName" />
+                <property name="WidthRequest">100</property>
+                <property name="HeightRequest">34</property>
+                <property name="CanFocus">True</property>
+                <property name="Type">TextOnly</property>
+                <property name="Label" translatable="yes">CANCEL</property>
+                <signal name="Clicked" handler="OnBtnCancelClicked" />
+              </widget>
+              <packing>
+                <property name="X">25</property>
+                <property name="Y">285</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Button" id="btnOK">
+                <property name="MemberName" />
+                <property name="WidthRequest">100</property>
+                <property name="HeightRequest">34</property>
+                <property name="CanFocus">True</property>
+                <property name="Type">TextOnly</property>
+                <property name="Label" translatable="yes">OK</property>
+                <signal name="Clicked" handler="OnBtnOKClicked" />
+              </widget>
+              <packing>
+                <property name="X">130</property>
+                <property name="Y">285</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Entry" id="tbxName">
+                <property name="MemberName" />
+                <property name="CanFocus">True</property>
+                <property name="IsEditable">True</property>
+                <property name="InvisibleChar">•</property>
+              </widget>
+              <packing>
+                <property name="X">93</property>
+                <property name="Y">50</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Label" id="label18">
+                <property name="MemberName" />
+                <property name="LabelProp" translatable="yes">&lt;span size='14000'&gt;Edit Desktop Attributes&lt;/span&gt;</property>
+                <property name="UseMarkup">True</property>
+              </widget>
+              <packing>
+                <property name="X">44</property>
+                <property name="Y">14</property>
+              </packing>
+            </child>
+          </widget>
+        </child>
+      </widget>
+    </child>
+  </widget>
+  <widget class="Gtk.Bin" id="client.desktopPolicyWidget" design-size="300 357">
+    <property name="MemberName" />
+    <property name="Visible">False</property>
+    <child>
+      <widget class="Gtk.EventBox" id="eventbox">
+        <property name="MemberName" />
+        <child>
+          <widget class="Gtk.Fixed" id="fixed1">
+            <property name="MemberName" />
+            <property name="HasWindow">False</property>
+            <child>
+              <widget class="Gtk.Label" id="labelTitle">
+                <property name="MemberName" />
+                <property name="LabelProp" translatable="yes">&lt;span size='14000'&gt;Desktop Policies&lt;/span&gt;</property>
+                <property name="UseMarkup">True</property>
+              </widget>
+              <packing>
+                <property name="X">45</property>
+                <property name="Y">21</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Button" id="btnOK">
+                <property name="MemberName" />
+                <property name="WidthRequest">206</property>
+                <property name="HeightRequest">34</property>
+                <property name="CanFocus">True</property>
+                <property name="Type">TextOnly</property>
+                <property name="Label" translatable="yes">OK</property>
+                <signal name="Clicked" handler="OnBtnOKClicked" />
+              </widget>
+              <packing>
+                <property name="X">25</property>
+                <property name="Y">323</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.ScrolledWindow" id="scrolledwindow1">
+                <property name="MemberName" />
+                <property name="WidthRequest">247</property>
+                <property name="HeightRequest">260</property>
+                <property name="CanFocus">True</property>
+                <property name="VscrollbarPolicy">Always</property>
+                <property name="HscrollbarPolicy">Never</property>
+                <property name="ShadowType">In</property>
+                <child>
+                  <widget class="Gtk.Viewport" id="GtkViewport">
+                    <property name="MemberName" />
+                    <property name="ShadowType">None</property>
+                    <child>
+                      <widget class="Gtk.VBox" id="vboxlist">
+                        <property name="MemberName" />
+                        <property name="Spacing">6</property>
+                        <child>
+                          <widget class="Gtk.HBox" id="hbox1">
+                            <property name="MemberName" />
+                            <property name="Spacing">6</property>
+                            <child>
+                              <widget class="Gtk.Label" id="label">
+                                <property name="MemberName" />
+                                <property name="WidthRequest">180</property>
+                                <property name="HeightRequest">25</property>
+                                <property name="Xalign">0</property>
+                                <property name="LabelProp" translatable="yes">label1</property>
+                              </widget>
+                              <packing>
+                                <property name="Position">0</property>
+                                <property name="AutoSize">True</property>
+                                <property name="Expand">False</property>
+                                <property name="Fill">False</property>
+                              </packing>
+                            </child>
+                            <child>
+                              <widget class="Gtk.Image" id="image">
+                                <property name="MemberName" />
+                                <property name="Pixbuf">resource:client.Resources.switch_2_on.png</property>
+                              </widget>
+                              <packing>
+                                <property name="Position">1</property>
+                                <property name="AutoSize">True</property>
+                                <property name="Expand">False</property>
+                                <property name="Fill">False</property>
+                              </packing>
+                            </child>
+                          </widget>
+                          <packing>
+                            <property name="Position">0</property>
+                            <property name="AutoSize">True</property>
+                            <property name="Expand">False</property>
+                            <property name="Fill">False</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <placeholder />
+                        </child>
+                        <child>
+                          <placeholder />
+                        </child>
+                      </widget>
+                    </child>
+                  </widget>
+                </child>
+              </widget>
+              <packing>
+                <property name="X">5</property>
+                <property name="Y">55</property>
+              </packing>
+            </child>
+          </widget>
+        </child>
+      </widget>
+    </child>
+  </widget>
+  <widget class="Gtk.Bin" id="client.desktopItemWidget" design-size="300 312">
+    <property name="MemberName" />
+    <property name="WidthRequest">200</property>
+    <property name="Visible">False</property>
+    <child>
+      <widget class="Gtk.EventBox" id="eventbox">
+        <property name="MemberName" />
+        <signal name="ButtonPressEvent" handler="OnEventboxButtonPressEvent" />
+        <signal name="EnterNotifyEvent" handler="OnEventboxEnterNotifyEvent" />
+        <signal name="LeaveNotifyEvent" handler="OnEventboxLeaveNotifyEvent" />
+        <child>
+          <widget class="Gtk.VBox" id="vbox10">
+            <property name="MemberName" />
+            <property name="Spacing">6</property>
+            <child>
+              <widget class="Gtk.Fixed" id="fixedDefault">
+                <property name="MemberName" />
+                <property name="WidthRequest">256</property>
+                <property name="HeightRequest">70</property>
+                <property name="HasWindow">False</property>
+                <child>
+                  <widget class="Gtk.Image" id="imgDesktopIcon">
+                    <property name="MemberName" />
+                    <property name="Pixbuf">resource:client.Resources.icon_broker_enable.png</property>
+                  </widget>
+                  <packing>
+                    <property name="X">10</property>
+                    <property name="Y">20</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="Gtk.Label" id="labelDesktopName">
+                    <property name="MemberName" />
+                    <property name="WidthRequest">160</property>
+                    <property name="Xalign">0</property>
+                    <property name="LabelProp" translatable="yes">&lt;span size='15000'&gt;big text&lt;/span&gt;</property>
+                    <property name="UseMarkup">True</property>
+                  </widget>
+                  <packing>
+                    <property name="X">53</property>
+                    <property name="Y">16</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="Gtk.Label" id="labelDesktopIP">
+                    <property name="MemberName" />
+                    <property name="WidthRequest">100</property>
+                    <property name="Xalign">0</property>
+                    <property name="LabelProp" translatable="yes">label3</property>
+                  </widget>
+                  <packing>
+                    <property name="X">55</property>
+                    <property name="Y">40</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="Gtk.Image" id="imageArrow">
+                    <property name="MemberName" />
+                    <property name="Pixbuf">resource:client.Resources.server_arrow_enable.png</property>
+                  </widget>
+                  <packing>
+                    <property name="X">227</property>
+                    <property name="Y">35</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="Gtk.Image" id="imgSharedIcon">
+                    <property name="MemberName" />
+                    <property name="WidthRequest">11</property>
+                    <property name="HeightRequest">11</property>
+                    <property name="Visible">False</property>
+                  </widget>
+                  <packing>
+                    <property name="X">164</property>
+                    <property name="Y">53</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="Gtk.Image" id="imgAutoStartIcon">
+                    <property name="MemberName" />
+                    <property name="WidthRequest">12</property>
+                    <property name="HeightRequest">12</property>
+                    <property name="Visible">False</property>
+                  </widget>
+                  <packing>
+                    <property name="X">221</property>
+                    <property name="Y">52</property>
+                  </packing>
+                </child>
+              </widget>
+              <packing>
+                <property name="Position">0</property>
+                <property name="AutoSize">True</property>
+                <property name="Expand">False</property>
+                <property name="Fill">False</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Fixed" id="fixedDetail">
+                <property name="MemberName" />
+                <property name="HeightRequest">75</property>
+                <property name="HasWindow">False</property>
+                <child>
+                  <widget class="Gtk.Label" id="labelConnectState">
+                    <property name="MemberName" />
+                    <property name="WidthRequest">85</property>
+                    <property name="HeightRequest">14</property>
+                    <property name="Xalign">0</property>
+                    <property name="Yalign">0</property>
+                    <property name="LabelProp" translatable="yes">&lt;span size='9000'&gt;Status&lt;/span&gt;</property>
+                    <property name="UseMarkup">True</property>
+                  </widget>
+                  <packing>
+                    <property name="Y">5</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="Gtk.Label" id="labelDesktopState">
+                    <property name="MemberName" />
+                    <property name="WidthRequest">60</property>
+                    <property name="HeightRequest">14</property>
+                    <property name="Xalign">0</property>
+                    <property name="Yalign">0</property>
+                    <property name="LabelProp" translatable="yes">&lt;span size='9000'&gt;Desktop&lt;/span&gt;</property>
+                    <property name="UseMarkup">True</property>
+                  </widget>
+                  <packing>
+                    <property name="Y">22</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="Gtk.Label" id="labelDesktopStateValue">
+                    <property name="MemberName" />
+                    <property name="Xalign">0</property>
+                    <property name="Yalign">0</property>
+                    <property name="LabelProp" translatable="yes">&lt;span size='9000'&gt;Label&lt;/span&gt;</property>
+                    <property name="UseMarkup">True</property>
+                  </widget>
+                  <packing>
+                    <property name="X">65</property>
+                    <property name="Y">22</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="Gtk.Button" id="btnProperty">
+                    <property name="MemberName" />
+                    <property name="WidthRequest">85</property>
+                    <property name="HeightRequest">36</property>
+                    <property name="CanFocus">True</property>
+                    <property name="Type">TextOnly</property>
+                    <property name="Label" translatable="yes">POLICY</property>
+                    <signal name="Clicked" handler="OnBtnPropertyClicked" />
+                  </widget>
+                  <packing>
+                    <property name="Y">40</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="Gtk.Button" id="btnEdit">
+                    <property name="MemberName" />
+                    <property name="WidthRequest">85</property>
+                    <property name="HeightRequest">36</property>
+                    <property name="CanFocus">True</property>
+                    <property name="Type">TextOnly</property>
+                    <property name="Label" translatable="yes">EDIT</property>
+                    <signal name="Clicked" handler="OnBtnEditClicked" />
+                  </widget>
+                  <packing>
+                    <property name="X">84</property>
+                    <property name="Y">40</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="Gtk.Button" id="btnConnect">
+                    <property name="MemberName" />
+                    <property name="WidthRequest">85</property>
+                    <property name="HeightRequest">36</property>
+                    <property name="CanFocus">True</property>
+                    <property name="Type">TextOnly</property>
+                    <property name="Label" translatable="yes">CONNECT</property>
+                    <signal name="Clicked" handler="OnBtnConnectClicked" />
+                  </widget>
+                  <packing>
+                    <property name="X">169</property>
+                    <property name="Y">40</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="Gtk.Label" id="labelConnectStateValue">
+                    <property name="MemberName" />
+                    <property name="Xalign">0</property>
+                    <property name="Yalign">0</property>
+                    <property name="LabelProp" translatable="yes">&lt;span size='9000'&gt;Label&lt;/span&gt;</property>
+                    <property name="UseMarkup">True</property>
+                  </widget>
+                  <packing>
+                    <property name="X">65</property>
+                    <property name="Y">5</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="Gtk.Label" id="labelPowerState">
+                    <property name="MemberName" />
+                    <property name="WidthRequest">50</property>
+                    <property name="HeightRequest">14</property>
+                    <property name="Xalign">0</property>
+                    <property name="Yalign">0</property>
+                    <property name="LabelProp" translatable="yes">&lt;span size='9000'&gt;Power&lt;/span&gt;</property>
+                    <property name="UseMarkup">True</property>
+                  </widget>
+                  <packing>
+                    <property name="X">130</property>
+                    <property name="Y">5</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="Gtk.Label" id="labelAgentState">
+                    <property name="MemberName" />
+                    <property name="WidthRequest">60</property>
+                    <property name="HeightRequest">14</property>
+                    <property name="Xalign">0</property>
+                    <property name="Yalign">0</property>
+                    <property name="LabelProp" translatable="yes">&lt;span size='9000'&gt;Agent&lt;/span&gt;</property>
+                    <property name="UseMarkup">True</property>
+                  </widget>
+                  <packing>
+                    <property name="X">130</property>
+                    <property name="Y">22</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="Gtk.Label" id="labelPowerStateValue">
+                    <property name="MemberName" />
+                    <property name="Xalign">0</property>
+                    <property name="Yalign">0</property>
+                    <property name="LabelProp" translatable="yes">&lt;span size='9000'&gt;Label&lt;/span&gt;</property>
+                    <property name="UseMarkup">True</property>
+                  </widget>
+                  <packing>
+                    <property name="X">180</property>
+                    <property name="Y">5</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="Gtk.Label" id="labelAgentStateValue">
+                    <property name="MemberName" />
+                    <property name="Xalign">0</property>
+                    <property name="Yalign">0</property>
+                    <property name="LabelProp" translatable="yes">&lt;span size='9000'&gt;Label&lt;/span&gt;</property>
+                    <property name="UseMarkup">True</property>
+                  </widget>
+                  <packing>
+                    <property name="X">180</property>
+                    <property name="Y">22</property>
+                  </packing>
+                </child>
+              </widget>
+              <packing>
+                <property name="Position">1</property>
+                <property name="AutoSize">True</property>
+                <property name="Expand">False</property>
+                <property name="Fill">False</property>
+              </packing>
+            </child>
+          </widget>
+        </child>
+      </widget>
+    </child>
+  </widget>
+  <widget class="Gtk.Bin" id="client.desktoplistWidget" design-size="300 442">
+    <property name="MemberName" />
+    <property name="WidthRequest">256</property>
+    <property name="HeightRequest">377</property>
+    <property name="Visible">False</property>
+    <child>
+      <widget class="Gtk.VBox" id="vbox209">
+        <property name="MemberName" />
+        <property name="Spacing">6</property>
+        <child>
+          <widget class="Gtk.EventBox" id="eventboxDesktoplist">
+            <property name="MemberName" />
+            <child>
+              <widget class="Gtk.VBox" id="vbox509">
+                <property name="MemberName" />
+                <property name="Spacing">6</property>
+                <child>
+                  <widget class="Gtk.ScrolledWindow" id="scrollDesktoplist9">
+                    <property name="MemberName" />
+                    <property name="CanFocus">True</property>
+                    <property name="ShadowType">In</property>
+                    <child>
+                      <widget class="Gtk.Viewport" id="GtkViewport">
+                        <property name="MemberName" />
+                        <property name="ShadowType">None</property>
+                        <child>
+                          <widget class="Gtk.VBox" id="vboxDesktoplist">
+                            <property name="MemberName" />
+                            <property name="Spacing">6</property>
+                            <child>
+                              <placeholder />
+                            </child>
+                            <child>
+                              <placeholder />
+                            </child>
+                            <child>
+                              <placeholder />
+                            </child>
+                          </widget>
+                        </child>
+                      </widget>
+                    </child>
+                  </widget>
+                  <packing>
+                    <property name="Position">0</property>
+                    <property name="AutoSize">True</property>
+                  </packing>
+                </child>
+              </widget>
+            </child>
+          </widget>
+          <packing>
+            <property name="Position">0</property>
+            <property name="AutoSize">True</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+  </widget>
+  <widget class="Gtk.Bin" id="client.bookmarkItemWidget" design-size="520 99">
+    <property name="MemberName" />
+    <property name="WidthRequest">520</property>
+    <property name="HeightRequest">73</property>
+    <property name="Visible">False</property>
+    <child>
+      <widget class="Gtk.EventBox" id="eventbox">
+        <property name="MemberName" />
+        <signal name="ButtonPressEvent" handler="OnEventboxButtonPressEvent" />
+        <signal name="EnterNotifyEvent" handler="OnEventboxEnterNotifyEvent" />
+        <signal name="LeaveNotifyEvent" handler="OnEventboxLeaveNotifyEvent" />
+        <child>
+          <widget class="Gtk.Fixed" id="fixed1">
+            <property name="MemberName" />
+            <property name="HasWindow">False</property>
+            <child>
+              <widget class="Gtk.Image" id="imageServer">
+                <property name="MemberName" />
+                <property name="Pixbuf">resource:client.Resources.icon_broker_enable.png</property>
+              </widget>
+              <packing>
+                <property name="X">22</property>
+                <property name="Y">30</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Label" id="labelServerName">
+                <property name="MemberName" />
+                <property name="LabelProp" translatable="yes">&lt;span size='15000'&gt;label1&lt;/span&gt;</property>
+                <property name="UseMarkup">True</property>
+              </widget>
+              <packing>
+                <property name="X">55</property>
+                <property name="Y">30</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Image" id="imageDesktop">
+                <property name="MemberName" />
+                <property name="Pixbuf">resource:client.Resources.icon_broker_enable.png</property>
+              </widget>
+              <packing>
+                <property name="X">227</property>
+                <property name="Y">22</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Image" id="imageArrow">
+                <property name="MemberName" />
+                <property name="Pixbuf">resource:client.Resources.bookmark_arrow_enable.png</property>
+              </widget>
+              <packing>
+                <property name="X">486</property>
+                <property name="Y">33</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Label" id="labelDesktopName">
+                <property name="MemberName" />
+                <property name="LabelProp" translatable="yes">&lt;span size='15000'&gt;label2&lt;/span&gt;</property>
+                <property name="UseMarkup">True</property>
+              </widget>
+              <packing>
+                <property name="X">270</property>
+                <property name="Y">20</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Label" id="labelDesktopIP">
+                <property name="MemberName" />
+                <property name="LabelProp" translatable="yes">label3</property>
+              </widget>
+              <packing>
+                <property name="X">270</property>
+                <property name="Y">43</property>
+              </packing>
+            </child>
+          </widget>
+        </child>
+      </widget>
+    </child>
+  </widget>
+  <widget class="Gtk.Dialog" id="client.PopupMessageDialog" design-size="400 300">
+    <property name="MemberName" />
+    <property name="WidthRequest">258</property>
+    <property name="HeightRequest">168</property>
+    <property name="WindowPosition">CenterOnParent</property>
+    <property name="Buttons">2</property>
+    <property name="HelpButton">False</property>
+    <child internal-child="VBox">
+      <widget class="Gtk.VBox" id="dialog1_VBox">
+        <property name="MemberName" />
+        <property name="BorderWidth">2</property>
+        <child>
+          <widget class="Gtk.VBox" id="vbox2">
+            <property name="MemberName" />
+            <property name="Spacing">4</property>
+            <child>
+              <widget class="Gtk.Label" id="lb_time">
+                <property name="MemberName" />
+                <property name="LabelProp" translatable="yes">2023-02-22 13:00:00</property>
+                <property name="Justify">Right</property>
+              </widget>
+              <packing>
+                <property name="Position">0</property>
+                <property name="AutoSize">True</property>
+                <property name="Expand">False</property>
+                <property name="Fill">False</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.ScrolledWindow" id="GtkScrolledWindow">
+                <property name="MemberName" />
+                <property name="ShadowType">In</property>
+                <child>
+                  <widget class="Gtk.TextView" id="tbxContent">
+                    <property name="MemberName" />
+                    <property name="CanFocus">True</property>
+                    <property name="ShowScrollbars">True</property>
+                    <property name="Text" translatable="yes" />
+                    <property name="WrapMode">WordChar</property>
+                  </widget>
+                </child>
+              </widget>
+              <packing>
+                <property name="Position">1</property>
+                <property name="AutoSize">True</property>
+              </packing>
+            </child>
+          </widget>
+          <packing>
+            <property name="Position">0</property>
+            <property name="AutoSize">True</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+    <child internal-child="ActionArea">
+      <widget class="Gtk.HButtonBox" id="dialog1_ActionArea">
+        <property name="MemberName" />
+        <property name="Spacing">10</property>
+        <property name="BorderWidth">5</property>
+        <property name="Size">2</property>
+        <property name="LayoutStyle">End</property>
+        <child>
+          <widget class="Gtk.Button" id="buttonOk">
+            <property name="MemberName" />
+            <property name="CanDefault">True</property>
+            <property name="CanFocus">True</property>
+            <property name="UseStock">True</property>
+            <property name="Type">StockItem</property>
+            <property name="StockId">gtk-ok</property>
+            <property name="ResponseId">-5</property>
+            <signal name="Clicked" handler="OnButtonOkClicked" />
+            <property name="label">gtk-ok</property>
+          </widget>
+          <packing>
+            <property name="Expand">False</property>
+            <property name="Fill">False</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Button" id="buttonCancel">
+            <property name="MemberName" />
+            <property name="CanDefault">True</property>
+            <property name="CanFocus">True</property>
+            <property name="UseStock">True</property>
+            <property name="Type">StockItem</property>
+            <property name="StockId">gtk-cancel</property>
+            <property name="ResponseId">-6</property>
+            <signal name="Clicked" handler="OnButtonCancelClicked" />
+            <property name="label">gtk-cancel</property>
+          </widget>
+          <packing>
+            <property name="Position">1</property>
+            <property name="Expand">False</property>
+            <property name="Fill">False</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+  </widget>
+  <widget class="Gtk.Bin" id="client.leftMenuItemWidget" design-size="300 300">
+    <property name="MemberName" />
+    <property name="HeightRequest">40</property>
+    <property name="Visible">False</property>
+    <child>
+      <widget class="Gtk.EventBox" id="eventbox">
+        <property name="MemberName" />
+        <signal name="ButtonPressEvent" handler="OnEventboxButtonPressEvent" />
+        <signal name="EnterNotifyEvent" handler="OnEventboxEnterNotifyEvent" />
+        <signal name="LeaveNotifyEvent" handler="OnEventboxLeaveNotifyEvent" />
+        <child>
+          <widget class="Gtk.Fixed" id="fixed1">
+            <property name="MemberName" />
+            <property name="HasWindow">False</property>
+            <child>
+              <widget class="Gtk.Image" id="imageIcon">
+                <property name="MemberName" />
+              </widget>
+              <packing>
+                <property name="X">16</property>
+                <property name="Y">10</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Label" id="labelTitle">
+                <property name="MemberName" />
+                <property name="WidthRequest">130</property>
+                <property name="Xalign">0</property>
+                <property name="Yalign">0</property>
+                <property name="LabelProp" translatable="yes">&lt;span size='15500'&gt;HOME&lt;/span&gt;</property>
+                <property name="UseMarkup">True</property>
+              </widget>
+              <packing>
+                <property name="X">50</property>
+                <property name="Y">8</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Image" id="imageArrow">
+                <property name="MemberName" />
+              </widget>
+              <packing>
+                <property name="X">237</property>
+                <property name="Y">14</property>
+              </packing>
+            </child>
+          </widget>
+        </child>
+      </widget>
+    </child>
+  </widget>
+  <widget class="Gtk.Dialog" id="client.ChangePasswordDialog" design-size="296 346">
+    <property name="MemberName" />
+    <property name="WindowPosition">CenterOnParent</property>
+    <property name="Buttons">2</property>
+    <property name="HelpButton">False</property>
+    <child internal-child="VBox">
+      <widget class="Gtk.VBox" id="dialog1_VBox">
+        <property name="MemberName" />
+        <property name="BorderWidth">2</property>
+        <child>
+          <widget class="client.ChangePasswordWidget" id="changepasswordwidget1">
+            <property name="MemberName" />
+            <property name="HeightRequest">300</property>
+            <property name="Events">ButtonPressMask</property>
+          </widget>
+          <packing>
+            <property name="Position">0</property>
+            <property name="AutoSize">True</property>
+            <property name="Expand">False</property>
+            <property name="Fill">False</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+    <child internal-child="ActionArea">
+      <widget class="Gtk.HButtonBox" id="dialog1_ActionArea">
+        <property name="MemberName" />
+        <property name="Spacing">10</property>
+        <property name="BorderWidth">5</property>
+        <property name="Size">2</property>
+        <property name="LayoutStyle">End</property>
+        <child>
+          <widget class="Gtk.Button" id="buttonOk">
+            <property name="MemberName" />
+            <property name="CanDefault">True</property>
+            <property name="CanFocus">True</property>
+            <property name="Type">TextOnly</property>
+            <property name="Label" translatable="yes">Apply</property>
+            <property name="UseUnderline">True</property>
+            <property name="ResponseId">0</property>
+            <signal name="Clicked" handler="OnButtonOkClicked" />
+          </widget>
+          <packing>
+            <property name="Expand">False</property>
+            <property name="Fill">False</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Button" id="buttonCancel">
+            <property name="MemberName" />
+            <property name="CanDefault">True</property>
+            <property name="Type">TextOnly</property>
+            <property name="Label" translatable="yes">Cancel</property>
+            <property name="UseUnderline">True</property>
+            <property name="ResponseId">-6</property>
+            <signal name="Clicked" handler="OnButtonCancelClicked" />
+          </widget>
+          <packing>
+            <property name="Position">1</property>
+            <property name="Expand">False</property>
+            <property name="Fill">False</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+  </widget>
+  <widget class="Gtk.Bin" id="client.ChangePasswordWidget" design-size="385 300">
+    <property name="MemberName" />
+    <property name="Visible">False</property>
+    <child>
+      <widget class="Gtk.EventBox" id="eventbox_changepassword">
+        <property name="MemberName" />
+        <child>
+          <widget class="Gtk.Fixed" id="fixed_changepassword">
+            <property name="MemberName" />
+            <property name="HasWindow">False</property>
+            <child>
+              <widget class="Gtk.Label" id="lb_ChangePasswordTitle">
+                <property name="MemberName" />
+                <property name="LabelProp" translatable="yes">&lt;span size='14000'&gt;Change Password&lt;/span&gt;</property>
+                <property name="UseMarkup">True</property>
+              </widget>
+              <packing>
+                <property name="X">60</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Entry" id="entry_CurPassword">
+                <property name="MemberName" />
+                <property name="Visible">False</property>
+                <property name="CanFocus">True</property>
+                <property name="IsEditable">True</property>
+                <property name="MaxLength">30</property>
+                <property name="InvisibleChar">●</property>
+              </widget>
+              <packing>
+                <property name="X">60</property>
+                <property name="Y">75</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Label" id="lb_CurPassword">
+                <property name="MemberName" />
+                <property name="LabelProp" translatable="yes">Current Password</property>
+              </widget>
+              <packing>
+                <property name="X">60</property>
+                <property name="Y">50</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Label" id="lb_ConfirmNewPassword">
+                <property name="MemberName" />
+                <property name="LabelProp" translatable="yes">Confirm New Password</property>
+              </widget>
+              <packing>
+                <property name="X">60</property>
+                <property name="Y">171</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Entry" id="entry_ConfirmNewPassword">
+                <property name="MemberName" />
+                <property name="Visible">False</property>
+                <property name="CanFocus">True</property>
+                <property name="IsEditable">True</property>
+                <property name="MaxLength">30</property>
+                <property name="InvisibleChar">●</property>
+                <signal name="KeyPressEvent" handler="OnEntryConfirmNewPasswordKeyPressEvent" />
+              </widget>
+              <packing>
+                <property name="X">60</property>
+                <property name="Y">195</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Label" id="lb_NewPassword">
+                <property name="MemberName" />
+                <property name="LabelProp" translatable="yes">New Password</property>
+              </widget>
+              <packing>
+                <property name="X">60</property>
+                <property name="Y">110</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Entry" id="entry_NewPassword">
+                <property name="MemberName" />
+                <property name="Visible">False</property>
+                <property name="CanFocus">True</property>
+                <property name="IsEditable">True</property>
+                <property name="MaxLength">30</property>
+                <property name="InvisibleChar">●</property>
+              </widget>
+              <packing>
+                <property name="X">60</property>
+                <property name="Y">135</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Label" id="lb_ErrorMessage">
+                <property name="MemberName" />
+                <property name="WidthRequest">250</property>
+                <property name="HeightRequest">60</property>
+                <property name="LabelProp" translatable="yes">Error</property>
+                <property name="UseMarkup">True</property>
+                <property name="Wrap">True</property>
+              </widget>
+              <packing>
+                <property name="X">10</property>
+                <property name="Y">234</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Label" id="lb_ReasonMessage">
+                <property name="MemberName" />
+                <property name="LabelProp" translatable="yes">Reason</property>
+                <property name="UseMarkup">True</property>
+              </widget>
+              <packing>
+                <property name="X">10</property>
+                <property name="Y">27</property>
+              </packing>
+            </child>
+          </widget>
+        </child>
+      </widget>
+    </child>
+  </widget>
+  <widget class="Gtk.Window" id="client.InfoWindow" design-size="220 179">
+    <property name="MemberName" />
+    <property name="Title" translatable="yes">Version Information</property>
+    <property name="TypeHint">Menu</property>
+    <property name="WindowPosition">CenterOnParent</property>
+    <property name="Modal">True</property>
+    <child>
+      <widget class="Gtk.Fixed" id="fixed1">
+        <property name="MemberName" />
+        <property name="HasWindow">False</property>
+        <child>
+          <widget class="Gtk.Label" id="labelDxClientVesion">
+            <property name="MemberName" />
+            <property name="WidthRequest">200</property>
+            <property name="LabelProp" translatable="yes">dxClient Version</property>
+            <property name="Justify">Center</property>
+          </widget>
+          <packing>
+            <property name="X">5</property>
+            <property name="Y">60</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Label" id="labelDaaSXpertVersion">
+            <property name="MemberName" />
+            <property name="WidthRequest">200</property>
+            <property name="LabelProp" translatable="yes">DaaSXpert Ver. 3.0</property>
+            <property name="Justify">Center</property>
+          </widget>
+          <packing>
+            <property name="X">5</property>
+            <property name="Y">20</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Label" id="labelFileVersion">
+            <property name="MemberName" />
+            <property name="WidthRequest">200</property>
+            <property name="LabelProp" translatable="yes">File Version : 3.0.0.000</property>
+          </widget>
+          <packing>
+            <property name="X">5</property>
+            <property name="Y">100</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Label" id="labelBuildDate">
+            <property name="MemberName" />
+            <property name="WidthRequest">200</property>
+            <property name="LabelProp" translatable="yes">Build Date 0000-00-00</property>
+          </widget>
+          <packing>
+            <property name="X">5</property>
+            <property name="Y">140</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+  </widget>
+</stetic-interface>

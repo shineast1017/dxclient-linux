@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="EVENT_LOG_NAME">
+    <value>HCVKAService</value>
+  </data>
+  <data name="EXECUTE_NAME_FOR_HCVKASERVICE" xml:space="preserve">
+    <value>HCVKAService.exe</value>
+  </data>
+  <data name="EXECUTE_NAME_FOR_HCVKATRAY" xml:space="preserve">
+    <value>HCVKATray.exe</value>
+  </data>
+  <data name="EXECUTE_NAME_FOR_HCVKSLIBRARY" xml:space="preserve">
+    <value>HCVKSLibrary.dll</value>
+  </data>
+  <data name="FW_GROUP_ENAME" xml:space="preserve">
+    <value>HyperCloud</value>
+  </data>
+  <data name="FW_RULE_NAME_INTERFACE" xml:space="preserve">
+    <value>HCVKAService_Interface_Rule</value>
+  </data>
+  <data name="FW_RULE_NAME_TEST_INTERFACE" xml:space="preserve">
+    <value>HCVKAService_Test_Interface_Rule</value>
+  </data>
+  <data name="FW_RULE_NAME_VDI" xml:space="preserve">
+    <value>HCVKAService_VDI_Rule</value>
+  </data>
+  <data name="HCVKB_REQUEST_HEALTH_REPORT" xml:space="preserve">
+    <value>agent/health</value>
+  </data>
+  <data name="HCVKB_REQUEST_LOG_REPORT" xml:space="preserve">
+    <value>logs/type/agent</value>
+  </data>
+  <data name="HCVKB_REQUEST_RE_REGISTRATION" xml:space="preserve">
+    <value>agent/reregistration</value>
+  </data>
+  <data name="HCVK_HEADER_AUTH_TOKEN" xml:space="preserve">
+    <value>HCVK-Auth-Token</value>
+  </data>
+  <data name="IPC_SERVER_NAME" xml:space="preserve">
+    <value>HCVKA</value>
+  </data>
+  <data name="LOG_AG_COMMON_INTEGRITY" xml:space="preserve">
+    <value>AG.COMMON.INTEGRITY</value>
+  </data>
+  <data name="LOG_AG_COMMON_REGISTRATION" xml:space="preserve">
+    <value>AG.COMMON.REGISTRATION</value>
+  </data>
+  <data name="LOG_AG_COMMON_REREGISTRATION" xml:space="preserve">
+    <value>AG.COMMON.REREGISTRATION</value>
+  </data>
+  <data name="LOG_AG_DESKTOP_CONNECT" xml:space="preserve">
+    <value>AG.DESKTOP.CONNECT</value>
+  </data>
+  <data name="LOG_AG_DESKTOP_DISCONNECT" xml:space="preserve">
+    <value>AG.DESKTOP.DISCONNECT</value>
+  </data>
+  <data name="LOG_AG_DESKTOP_ONCONNECT" xml:space="preserve">
+    <value>AG.DESKTOP.ONCONNECT</value>
+  </data>
+  <data name="LOG_AG_DESKTOP_RECONNECT" xml:space="preserve">
+    <value>AG.DESKTOP.RECONNECT</value>
+  </data>
+  <data name="LOG_A_0001" xml:space="preserve">
+    <value>Registration</value>
+  </data>
+  <data name="LOG_A_0002" xml:space="preserve">
+    <value>ClientConnecting</value>
+  </data>
+  <data name="LOG_A_0003" xml:space="preserve">
+    <value>ClientConnected</value>
+  </data>
+  <data name="LOG_A_0004" xml:space="preserve">
+    <value>ClientReConnect</value>
+  </data>
+  <data name="LOG_A_0005" xml:space="preserve">
+    <value>ClientDisconnect</value>
+  </data>
+  <data name="LOG_A_0006" xml:space="preserve">
+    <value>Integirty</value>
+  </data>
+  <data name="NODE_NAME_HCVKB" xml:space="preserve">
+    <value>HCVKB</value>
+  </data>
+  <data name="NODE_NAME_HCVKC" xml:space="preserve">
+    <value>HCVKC</value>
+  </data>
+  <data name="NODE_VERSION_MIN_HCVKB" xml:space="preserve">
+    <value>2.0.0.1</value>
+  </data>
+  <data name="NODE_VERSION_MIN_HCVKC" xml:space="preserve">
+    <value>2.0.1.10</value>
+  </data>
+  <data name="PROCESS_NAME_FOR_HCVKATRAY" xml:space="preserve">
+    <value>HCVKATray</value>
+  </data>
+  <data name="REG_RDP_PORT_SUBKEY" xml:space="preserve">
+    <value>System\\CurrentControlSet\\Control\\Terminal Server\\WinStations\\RDP-Tcp\\</value>
+  </data>
+  <data name="REG_RDP_SUBKEY" xml:space="preserve">
+    <value>SYSTEM\\CurrentControlSet\\Control\\Terminal Server\\</value>
+  </data>
+  <data name="REQUEST_NODE_NAME" xml:space="preserve">
+    <value>HCVKA</value>
+  </data>
+  <data name="WINDOWS_RDP_SERVICE_NAME" xml:space="preserve">
+    <value>TermService</value>
+  </data>
+  <data name="WINDOWS_SESSION_RDP_SERVICE_NAME" xml:space="preserve">
+    <value>SessionEnv</value>
+  </data>
+  <data name="WINDOWS_USER_MODE_RDP_SERVICE_NAME" xml:space="preserve">
+    <value>UmRdpService</value>
+  </data>
+</root>

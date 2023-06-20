@@ -1,0 +1,50 @@
+#!/bin/bash
+
+# postinst cleanup check file and remove
+REMOVE1=/usr/bin/mono-csc
+REMOVE2=/usr/bin/csc
+REMOVE3=/usr/bin/csharp
+
+if [ -f "$REMOVE1" ]; then
+
+#  echo "$REMOVE1 clear"
+  sudo rm $REMOVE1
+#else 
+ 
+fi
+
+if [ -f "$REMOVE2" ]; then
+
+#  echo "$REMOVE2 clear"
+  sudo rm $REMOVE2
+
+#else 
+
+fi
+
+
+if [ -f "$REMOVE3" ]; then
+
+#  echo "$REMOVE3 clear"
+  sudo rm $REMOVE3
+#else 
+ 
+fi
+
+find /home/*/.config/DaaSXpert/ -name "*.ini" -type f -delete
+
+find /home/*/.config/Thincast/ -name "*.conf" -type f -delete
+
+sudo mv /usr/lib/DaaSXpertClient/rdc.AppImage ./
+sudo chmod +x ./rdc.AppImage
+sudo rm -rf /usr/lib/DaaSXpertClient/rdc
+# file extract version #1
+#./rdc.AppImage --appimage-extract
+#sudo mv ./squashfs-root ./rdc
+#sudo mv ./rdc /usr/lib/DaaSXpertClient/
+
+# use AppImage file version #2
+sudo mkdir /usr/lib/DaaSXpertClient/rdc
+sudo mv ./rdc.AppImage /usr/lib/DaaSXpertClient/rdc/
+
+exit 0

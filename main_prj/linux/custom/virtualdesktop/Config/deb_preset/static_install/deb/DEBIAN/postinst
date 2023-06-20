@@ -1,0 +1,39 @@
+#!/bin/bash
+
+# postinst cleanup check file and remove
+REMOVE1=/usr/bin/mono-csc
+REMOVE2=/usr/bin/csc
+REMOVE3=/usr/bin/csharp
+
+if [ -f "$REMOVE1" ]; then
+
+#  echo "$REMOVE1 clear"
+  sudo rm $REMOVE1
+#else 
+ 
+fi
+
+if [ -f "$REMOVE2" ]; then
+
+#  echo "$REMOVE2 clear"
+  sudo rm $REMOVE2
+
+#else 
+
+fi
+
+
+if [ -f "$REMOVE3" ]; then
+
+#  echo "$REMOVE3 clear"
+  sudo rm $REMOVE3
+#else 
+ 
+fi
+
+CURUSER=$(who | cut -f1 -d' ')
+rm /home/$CURUSER/.config/DaaSXpert/config.ini
+
+
+exit 0
+

@@ -1,0 +1,12 @@
+client/bin/**
+client/obj/**
+packages/**
+slibrary/obj/**
+../../../sub_prj/build/**
+../../bin/**
+.vs/**
+../../../sub_prj/build/
+Package/deb/usr/bin/xfreerdp
+Package/deb/usr/local/**
+Package/deb_preset/static_install/deb/usr/local/lib/libopenh264.so.7
+Package/deb/usr/share/**

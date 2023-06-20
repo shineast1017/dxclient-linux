@@ -1,0 +1,68 @@
+# D-bus interface support c based module 
+build command 
+
+current directroy terminal on 
+make
+
+using import c_dbus.so  for DxClient-Linux
+
+function list
+ RequestCheckVBalidBusName
+/////
+// Check Vaild BusName
+// 
+// input bus type, bus name, bus name lang
+// ret int check type
+int RequestCheckValidBusName(int bustype, char* bus_name, int busn_lang) {
+
+
+
+ RequestDbusMsg
+/////
+// Get Request D Bus Send And Response
+// work Method
+//  bus type  0 or 1    0 is session  1 is system
+// input bus type, bus name, bus name lang,
+// bus obj path, bus obj lang,
+// bus interface name, businterlang
+// bus method name, methodlang
+// send data, send data lang
+//
+// ret data chars
+
+char* RequestDbusMsg(int bustype, char* bus_name, int busn_lang,
+                char* bus_objp, int bus_objp_lang,
+                char* bus_if_name, int bus_if_lang,
+                char* method, int method_lang,
+                char* send_data, int send_data_lang
+
+
+
+////
+//  example for using c# code   on  linux(mono Ubuntu)
+
+// defined so  import
+    [DllImport("c_dbus.so", EntryPoint = "RequestDbusMsg", CallingConvention = CallingConvention.Cdecl, CharSet = CharSet.Ansi)]
+    private static extern IntPtr RequestDbusMsg(int bustype, string busname, int busn_lang, string bus_objp,
+        int bus_objp_lang, string bus_ifname, int bus_if_lang, string method, int method_lang,
+        string send_data, int send_data_lang);
+
+
+//    call  function
+        string busname = "kr.gooroom.ssohelper";
+        string bus_objpath = "/kr/gooroom/ssohelper";
+        string bus_ifname = "kr.gooroom.ssohelper";
+        string bus_method = "do_task";
+        string bus_senddata = "1 2";
+
+
+        String gettext = Marshal.PtrToStringAnsi(RequestDbusMsg(1,
+                                busname, busname.Length,
+                                bus_objpath, bus_objpath.Length,
+                                bus_ifname, bus_ifname.Length,
+                                bus_method, bus_method.Length,
+                                bus_senddata, bus_senddata.Length    
+                                ));
+
+// call end 
+

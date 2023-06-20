@@ -1,0 +1,91 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "client", "client\client.csproj", "{A3817E3F-8205-4C47-9E4E-8300DFC7FF72}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HCVKSLibrary", "slibrary\HCVKSLibrary.csproj", "{0539F725-A08C-4DA1-B85F-CD4338CB8EF8}"
+EndProject
+Project("{9344BDBB-3E7F-41FC-A0DD-8665D75EE146}") = "localization", "localization\localization.mdproj", "{60702666-686A-4C8B-B0DC-9AADC934927D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+		Default|Any CPU = Default|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A3817E3F-8205-4C47-9E4E-8300DFC7FF72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3817E3F-8205-4C47-9E4E-8300DFC7FF72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3817E3F-8205-4C47-9E4E-8300DFC7FF72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3817E3F-8205-4C47-9E4E-8300DFC7FF72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3817E3F-8205-4C47-9E4E-8300DFC7FF72}.Default|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3817E3F-8205-4C47-9E4E-8300DFC7FF72}.Default|Any CPU.Build.0 = Debug|Any CPU
+		{0539F725-A08C-4DA1-B85F-CD4338CB8EF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0539F725-A08C-4DA1-B85F-CD4338CB8EF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0539F725-A08C-4DA1-B85F-CD4338CB8EF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0539F725-A08C-4DA1-B85F-CD4338CB8EF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0539F725-A08C-4DA1-B85F-CD4338CB8EF8}.Default|Any CPU.ActiveCfg = Debug|Any CPU
+		{0539F725-A08C-4DA1-B85F-CD4338CB8EF8}.Default|Any CPU.Build.0 = Debug|Any CPU
+		{60702666-686A-4C8B-B0DC-9AADC934927D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{60702666-686A-4C8B-B0DC-9AADC934927D}.Debug|x86.Build.0 = Debug|Any CPU
+		{60702666-686A-4C8B-B0DC-9AADC934927D}.Release|x86.ActiveCfg = Release|Any CPU
+		{60702666-686A-4C8B-B0DC-9AADC934927D}.Release|x86.Build.0 = Release|Any CPU
+		{60702666-686A-4C8B-B0DC-9AADC934927D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60702666-686A-4C8B-B0DC-9AADC934927D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60702666-686A-4C8B-B0DC-9AADC934927D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60702666-686A-4C8B-B0DC-9AADC934927D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60702666-686A-4C8B-B0DC-9AADC934927D}.Default|Any CPU.ActiveCfg = Debug|Any CPU
+		{60702666-686A-4C8B-B0DC-9AADC934927D}.Default|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		Policies = $0
+		$0.DotNetNamingPolicy = $1
+		$1.DirectoryNamespaceAssociation = PrefixedHierarchical
+		$0.TextStylePolicy = $2
+		$2.FileWidth = 80
+		$2.TabsToSpaces = True
+		$2.scope = text/plain
+		$0.TextStylePolicy = $3
+		$3.inheritsSet = null
+		$3.scope = text/microsoft-resx
+		$0.XmlFormattingPolicy = $4
+		$4.inheritsSet = null
+		$4.scope = text/microsoft-resx
+		$0.TextStylePolicy = $5
+		$5.inheritsSet = null
+		$5.scope = application/xml
+		$0.XmlFormattingPolicy = $6
+		$6.scope = application/xml
+		$0.TextStylePolicy = $7
+		$7.FileWidth = 80
+		$7.scope = text/x-csharp
+		$0.CSharpFormattingPolicy = $8
+		$8.IndentSwitchSection = False
+		$8.NewLinesForBracesInTypes = False
+		$8.NewLinesForBracesInProperties = False
+		$8.NewLinesForBracesInAccessors = False
+		$8.NewLinesForBracesInAnonymousMethods = False
+		$8.NewLinesForBracesInControlBlocks = False
+		$8.NewLinesForBracesInAnonymousTypes = False
+		$8.NewLinesForBracesInObjectCollectionArrayInitializers = False
+		$8.NewLinesForBracesInLambdaExpressionBody = False
+		$8.NewLineForElse = False
+		$8.NewLineForCatch = False
+		$8.NewLineForFinally = False
+		$8.NewLineForMembersInObjectInit = False
+		$8.NewLineForMembersInAnonymousTypes = False
+		$8.NewLineForClausesInQuery = False
+		$8.SpacingAfterMethodDeclarationName = True
+		$8.SpaceAfterMethodCallName = True
+		$8.SpaceBeforeOpenSquareBracket = True
+		$8.scope = text/x-csharp
+		$0.TextStylePolicy = $9
+		$9.inheritsSet = null
+		$9.scope = application/config+xml
+		$0.XmlFormattingPolicy = $10
+		$10.inheritsSet = null
+		$10.scope = application/config+xml
+	EndGlobalSection
+EndGlobal

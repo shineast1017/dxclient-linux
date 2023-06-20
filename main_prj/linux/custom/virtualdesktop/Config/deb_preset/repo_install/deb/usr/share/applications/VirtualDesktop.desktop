@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=VirtualDesktop
+Comment=VDI Client Software resident on DaasXpert VM
+Exec=mono "/usr/lib/VirtualDesktop/client.exe"
+Icon=/usr/share/VirtualDesktop/HCTeam.png
+StartupNotify=true
+Terminal=false
+Type=Application
+Categories=GNOME;GTK;Development;IDE;
+
+

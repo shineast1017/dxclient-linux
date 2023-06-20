@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>2.0</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <data name="CLIENT_VERSION">
+        <value>3.0.0-L</value>
+    </data>
+    <data name="MY_DEVICE_TYPE">
+        <value>DT0111</value>
+    </data>
+    <data name="HCVK_HEADER_AUTH_TOKEN">
+        <value>HCVK-Auth-Token</value>
+    </data>
+    <data name="HCVKA_REQUEST_CONNECT">
+        <value>vdi/connect</value>
+    </data>
+    <data name="HCVKA_REQUEST_DISCONNECT">
+        <value>vdi/disconnect</value>
+    </data>
+    <data name="HCVKA_REQUEST_HEARTBEAT">
+        <value>vdi/heartbeat</value>
+    </data>
+    <data name="HCVKA_REQUEST_ONCONNECT">
+        <value>vdi/onconnect</value>
+    </data>
+    <data name="HCVKA_REQUEST_RECONNECT">
+        <value>vdi/reconnect</value>
+    </data>
+    <data name="HCVKA_REQUEST_DEVICEATTACH">
+        <value>vdi/device/attach</value>
+    </data>
+    <data name="HCVKA_REQUEST_DEVICEDETACH">
+        <value>vdi/device/detach</value>
+    </data>
+    <data name="HCVKB_REQUEST_CHANGE_INFO">
+        <value>client/password</value>
+    </data>
+    <data name="HCVKB_REQUEST_PASSWORD_VALIDATE">
+        <value>client/password_validate</value>
+    </data>
+    <data name="HCVKB_REQUEST_CLEAR_SESSION">
+        <value>client/clearSession</value>
+    </data>
+    <data name="HCVKB_REQUEST_DESKTOP">
+        <value>client/desktop</value>
+    </data>
+    <data name="HCVKB_REQUEST_DESKTOP_INFO">
+        <value>client/desktop/instance</value>
+    </data>
+    <data name="HCVKB_REQUEST_DESKTOP_POWER_CONTROL">
+        <value>client/desktop/powerControl</value>
+    </data>
+    <data name="HCVKB_REQUEST_LOGIN">
+        <value>client/login</value>
+    </data>
+    <data name="HCVKB_REQUEST_LOGOUT">
+        <value>client/logout</value>
+    </data>
+    <data name="HCVKB_REQUEST_POOL_INFO">
+        <value>client/pool</value>
+    </data>
+    <data name="HCVKB_REQUEST_RECOMMEND_SERVER">
+        <value>system/recommendServer</value>
+    </data>
+    <data name="HCVKB_REQUEST_TOKEN_REFRESH">
+        <value>token/refresh</value>
+    </data>
+    <data name="HCVKL_REQUEST_LOG_REPORT">
+        <value>logs/type/client</value>
+    </data>
+    <data name="REQUEST_NODE_NAME">
+        <value>HCVKC</value>
+    </data>
+    <data name="TYPE_INFO_TYPE_CONNECTION">
+        <value>CONNECTION</value>
+    </data>
+    <data name="TYPE_INFO_TYPE_INFO">
+        <value>INFO</value>
+    </data>
+  <data name="TYPE_ACCESS_DIV_DEDICATED" xml:space="preserve">
+    <value>DEDICATED</value>
+  </data>
+  <data name="TYPE_ACCESS_DIV_SHARED" xml:space="preserve">
+    <value>SHARED</value>
+  </data>
+  <data name="LOG_CL_DESKTOPINFO_POOL">
+    <value>CL.DESKTOPINFO.POOL</value>
+  </data>
+  <data name="LOG_CL_DESKTOPINFO_POWER">
+    <value>CL.DESKTOPINFO.POWER</value>
+  </data>
+  <data name="LOG_CL_DESKTOPINFO_STATUS">
+    <value>CL.DESKTOPINFO.STATUS</value>
+  </data>
+  <data name="LOG_CL_DESKTOP_CONNECT">
+    <value>CL.DESKTOP.CONNECT</value>
+  </data>
+  <data name="LOG_CL_DESKTOP_CONNECTIONINFO">
+    <value>CL.DESKTOP.CONNECTIONINFO</value>
+  </data>
+  <data name="LOG_CL_DESKTOP_DISCONNECT">
+    <value>CL.DESKTOP.DISCONNECT</value>
+  </data>
+  <data name="LOG_CL_DESKTOP_ONCONNECT">
+    <value>CL.DESKTOP.ONCONNECT</value>
+  </data>
+  <data name="LOG_CL_DESKTOP_RECONNECT">
+    <value>CL.DESKTOP.RECONNECT</value>
+  </data>
+  <data name="LOG_CL_USER_CHANGEINFO">
+    <value>CL.USER.CHANGEINFO</value>
+  </data>
+  <data name="LOG_CL_USER_INTEGRITY">
+    <value>CL.COMMON.INTEGRITY</value>
+  </data>
+  <data name="LOG_CL_USER_LOGIN">
+    <value>CL.USER.LOGIN</value>
+  </data>
+  <data name="LOG_CL_USER_LOGOUT">
+    <value>CL.USER.LOGOUT</value>
+  </data>
+  <data name="HCVKB_REQUEST_SYSTEM_PUBLICKEY">
+    <value>system/publickey</value>
+  </data>
+
+
+   
+</root>

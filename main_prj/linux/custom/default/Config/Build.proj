@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Run">
+  <PropertyGroup>
+    <Today>$([System.DateTime]::Now.ToString("yyyy.MM.dd"))</Today>
+    <!--
+    <Configuration>Release</Configuration>
+    -->
+    <Configuration  Condition=" '$(Configuration)' == '' ">Release</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <PackageName>DaaSXpertClient</PackageName>
+    <ProjectName>client</ProjectName>
+    <ProjectLibraryName>HCVKSLibrary</ProjectLibraryName>
+    <BinaryFolder>$(ProjectName)/bin/$(Configuration)</BinaryFolder>
+    <MainExecutable>$(BinaryFolder)/$(ProjectName).exe</MainExecutable>
+
+    <!--
+       FreeRdp SubProject binary import path
+    -->
+    <BinaryCoreModuleFolder>$(ProjectName)/../../../../sub_prj/build/release</BinaryCoreModuleFolder>
+
+  </PropertyGroup>
+  
+   <Target Name="Run">
+    <CallTarget Targets="Clean" />
+    <CallTarget Targets="Restore" />
+    <CallTarget Targets="Version" />
+    <CallTarget Targets="Build" />
+    <CallTarget Targets="Pack" />
+  </Target>
+
+  <!--
+    Clean Solution
+  -->
+  <Target Name="Clean">
+    <Message Text="Clean" />
+    <RemoveDir Directories="$(ProjectName)/bin/$(Configuration); slibrary/bin/$(Configuration);" ContinueOnError="False"/>
+    <RemoveDir Directories="$(ProjectName)/obj/$(Configuration); slibrary/obj/$(Configuration);" ContinueOnError="False"/>
+  </Target>
+
+  <!--
+    Restore NuGet Packages
+  -->
+  <Target Name="Restore">
+    <Message Text="Restore NuGet packages" />
+    <Exec Command="nuget restore" ContinueOnError="False"/>
+  </Target>
+
+  <!--
+    Update the version of the assemblies
+  -->
+  <UsingTask AssemblyFile="packages/MSBuild.Extension.Pack.1.9.1/tools/net40/MSBuild.ExtensionPack.dll" TaskName="AssemblyInfo" />
+  <Target Name="Version">
+    <Message Text="Versioning Assemblies" />
+    <ItemGroup>
+      <AssemblyInfoFiles Include="**\AssemblyInfo.cs" />
+    </ItemGroup>
+    <AssemblyInfo
+            AssemblyInfoFiles="@(AssemblyInfoFiles)"
+            
+            AssemblyMajorVersion="$(MajorVersion)"
+            AssemblyMinorVersion="$(MinorVersion)"
+            AssemblyBuildNumberType="NoIncrement"
+            AssemblyBuildNumberFormat="0"
+            AssemblyRevisionType="DateString"
+            AssemblyRevisionFormat="MMdd"
+          
+            AssemblyFileMajorVersion="$(MajorVersion)"
+            AssemblyFileMinorVersion="$(MinorVersion)"
+            AssemblyFileBuildNumberType="NoIncrement"
+            AssemblyFileBuildNumberFormat="0"
+            AssemblyFileRevisionType="DateString"
+            AssemblyFileRevisionFormat="MMdd"
+    />
+  </Target>
+  
+  <!--
+    Build Solution
+  -->
+  <Target Name="Build">
+    <Message Text="Build $(Configuration)" />
+    <MSBuild Projects="slibrary/$(ProjectLibraryName).csproj" Properties="Configuration=$(Configuration)" ContinueOnError="False"/>
+    <MSBuild Projects="$(ProjectName)/$(ProjectName).csproj" Properties="Configuration=$(Configuration)" ContinueOnError="False"/>
+  </Target>
+ 
+  <!--
+    Pack Solution Binaries to Debian package
+  -->
+    <UsingTask AssemblyFile="packages/MSBuild.Extension.Pack.1.9.1/tools/net40/MSBuild.ExtensionPack.dll" TaskName="Assembly"/>
+    <UsingTask AssemblyFile="packages/MSBuildTasks.1.5.0.235/tools/MSBuild.Community.Tasks.dll" TaskName="FileUpdate"/>
+    <Target Name="Pack" Condition=" '$(OS)' == 'Unix'" >
+      <Message Text="Pack binaries to deb package" />
+      <PropertyGroup>
+        <PackageFolder>Package</PackageFolder>
+        <TempFolder>temp</TempFolder>
+        <PackageDebFolder>$(PackageFolder)/deb</PackageDebFolder>
+        <PackageTempFolder>$(PackageFolder)/$(TempFolder)</PackageTempFolder>
+      </PropertyGroup>
+    
+    <MakeDir Directories="$(PackageDebFolder)/usr/share/locale/ko/LC_MESSAGES"/>
+    <MakeDir Directories="$(PackageDebFolder)/usr/share/locale/en/LC_MESSAGES"/>
+    <Exec Command="msgfmt localization/ko.po -o $(PackageDebFolder)/usr/share/locale/ko/LC_MESSAGES/DaaSXpertClient.mo"/>
+    <Exec Command="msgfmt localization/en.po -o $(PackageDebFolder)/usr/share/locale/en/LC_MESSAGES/DaaSXpertClient.mo"/>
+
+    <RemoveDir Directories="$(PackageTempFolder)" />    
+    <ItemGroup>
+      <FilesToDeleteInPackageFolder Include="$(PackageFolder)/*.deb"/>
+    </ItemGroup>    
+    <Delete Files="@(FilesToDeleteInPackageFolder)"/>
+  
+    <MakeDir Directories="$(PackageTempFolder)"/>
+    
+    <Exec Command="rsync -r --delete $(PackageDebFolder)/* $(PackageTempFolder)"/>
+  
+    <Assembly TaskAction="GetInfo" NetAssembly="$(MainExecutable)"> 
+      <Output TaskParameter="OutputItems" ItemName="Info"/> 
+    </Assembly>
+    <Message Text="AssemblyVersion: %(Info.AssemblyVersion)" />
+  
+    <FileUpdate Files="$(PackageTempFolder)/DEBIAN/control"
+          Regex="{xxx}"
+          ReplacementText="%(Info.AssemblyVersion)" />    
+  
+    <Exec Command="dos2unix $(PackageTempFolder)/DEBIAN/control"/>
+    
+    <ItemGroup>
+      <BinaryFiles Include="client/bin/config/**;$(BinaryFolder)/**/*.dll;$(BinaryFolder)/**/*.exe;$(BinaryFolder)/**/*.config;$(BinaryCoreModuleFolder)/**"/>
+    </ItemGroup>
+       <Copy SourceFiles="@(BinaryFiles)"
+                DestinationFiles="@(BinaryFiles->'$(PackageTempFolder)/usr/lib/$(PackageName)\%(RecursiveDir)%(Filename)%(Extension)')" />  
+<Exec Command="./deb_md5sum.sh  $(PackageTempFolder) "/>
+<Exec Command="fakeroot dpkg-deb -v -Z gzip --build $(PackageTempFolder)"/>
+    <Copy 
+      SourceFiles="$(PackageFolder)/$(TempFolder).deb" 
+      DestinationFiles="$(PackageFolder)/$(PackageName)_%(Info.AssemblyVersion)_amd64.deb"/>
+    <Delete Files="$(PackageFolder)/$(TempFolder).deb"/>
+  
+    <RemoveDir Directories="$(PackageTempFolder)" />
+  </Target>
+</Project>

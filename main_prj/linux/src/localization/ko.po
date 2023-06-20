@@ -1,0 +1,845 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2023-06-19 15:16:49+0900\n"
+"PO-Revision-Date: 2022-01-19 14:31:22+0900\n"
+"Last-Translator: user\n"
+"Language-Team: \n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: MonoDevelop Gettext addin\n"
+
+#: ../client/MainWindow.cs:453
+msgid "Network checking..."
+msgstr "네트워크 확인 중..."
+
+#: ../client/MainWindow.cs:470
+msgid ""
+"Please check your network connection. After checking network status,\n"
+"Press refresh button on general tab of setting page."
+msgstr ""
+"네트워크 연결을 확인하세요. 네트워크 상태를 확인한 후,\n"
+"세팅 페이지 - 일반 탭의 새로고침 버튼을 눌러주세요."
+
+#: ../client/MainWindow.cs:1651
+msgid "기존 Auto 설정을 해제하고, 재설정하시겠습니까?"
+msgstr ""
+
+#: ../client/MainWindow.cs:1859
+msgid "전원을 종료 하시겠습니까?"
+msgstr ""
+
+#: ../client/gtk-gui/MainWindow.cs:37 ../client/gtk-gui/MainWindow.cs:67
+#: ../client/gtk-gui/MainWindow.cs:121
+msgid "DaaSXpert Client"
+msgstr ""
+
+#: ../client/gtk-gui/client.leftMenuWidget.cs:78
+msgid "Client Application"
+msgstr ""
+
+#: ../client/gtk-gui/client.leftMenuWidget.cs:90
+msgid "VERSION"
+msgstr "2.0.1.30-L"
+
+#: ../client/gtk-gui/client.leftMenuWidget.cs:110
+msgid "Crossent Co., Ltd."
+msgstr ""
+
+#: ../client/gtk-gui/client.settingPageWidget.cs:147
+msgid "Language"
+msgstr "언어"
+
+#: ../client/gtk-gui/client.settingPageWidget.cs:155
+msgid "Network"
+msgstr "네트워크"
+
+#: ../client/gtk-gui/client.settingPageWidget.cs:163
+msgid "Enable Bookmark"
+msgstr "북마크 사용"
+
+#: ../client/gtk-gui/client.settingPageWidget.cs:171
+msgid "Auto Start"
+msgstr "자동 시작"
+
+#: ../client/gtk-gui/client.settingPageWidget.cs:179
+#: ../client/gtk-gui/client.addServerPageWidget.cs:62
+#: ../client/gtk-gui/client.logInWidget.cs:66
+msgid "Server Name"
+msgstr "서버 이름"
+
+#: ../client/gtk-gui/client.settingPageWidget.cs:187
+msgid "Desktop Name"
+msgstr "데스크탑 이름"
+
+#: ../client/gtk-gui/client.settingPageWidget.cs:194
+msgid "ko-KR"
+msgstr ""
+
+#: ../client/gtk-gui/client.settingPageWidget.cs:195
+msgid "en-US"
+msgstr ""
+
+#: ../client/gtk-gui/client.settingPageWidget.cs:210
+#: ../client/gtk-gui/client.settingPageWidget.cs:230
+#: ../client/gtk-gui/client.settingPageWidget.cs:293
+#: ../client/gtk-gui/client.settingPageWidget.cs:374
+#: ../client/gtk-gui/client.settingPageWidget.cs:394
+msgid "On"
+msgstr ""
+
+#: ../client/gtk-gui/client.settingPageWidget.cs:220
+#: ../client/gtk-gui/client.settingPageWidget.cs:240
+#: ../client/gtk-gui/client.settingPageWidget.cs:304
+#: ../client/gtk-gui/client.settingPageWidget.cs:384
+#: ../client/gtk-gui/client.settingPageWidget.cs:404
+msgid "Off"
+msgstr ""
+
+#: ../client/gtk-gui/client.settingPageWidget.cs:276
+msgid "Refresh"
+msgstr "새로고침"
+
+#: ../client/gtk-gui/client.settingPageWidget.cs:285
+msgid "Auto IP"
+msgstr ""
+
+#: ../client/gtk-gui/client.settingPageWidget.cs:317
+msgid "Auto Reconnect"
+msgstr "자동 재접속"
+
+#: ../client/gtk-gui/client.settingPageWidget.cs:326
+#: ../client/gtk-gui/client.settingPageWidget.cs:658
+msgid "General"
+msgstr "일반"
+
+#: ../client/gtk-gui/client.settingPageWidget.cs:336
+msgid "Dual Monitor"
+msgstr "듀얼 모니터"
+
+#: ../client/gtk-gui/client.settingPageWidget.cs:344
+#: ../client/gtk-gui/client.editDesktopPageWidget.cs:105
+msgid "Audio"
+msgstr "오디오"
+
+#: ../client/gtk-gui/client.settingPageWidget.cs:352
+#: ../client/gtk-gui/client.editDesktopPageWidget.cs:89
+msgid "Protocol"
+msgstr "프로토콜"
+
+#: ../client/gtk-gui/client.settingPageWidget.cs:360
+#: ../client/gtk-gui/client.editDesktopPageWidget.cs:97
+msgid "Resolution"
+msgstr "해상도"
+
+#: ../client/gtk-gui/client.settingPageWidget.cs:368
+#: ../client/gtk-gui/client.editDesktopPageWidget.cs:113
+msgid "Speed"
+msgstr "속도"
+
+#: ../client/gtk-gui/client.settingPageWidget.cs:415
+#: ../client/gtk-gui/client.editDesktopPageWidget.cs:140
+msgid "RDP"
+msgstr ""
+
+#: ../client/gtk-gui/client.settingPageWidget.cs:416
+#: ../client/gtk-gui/client.editDesktopPageWidget.cs:141
+msgid "SPICE"
+msgstr ""
+
+#: ../client/gtk-gui/client.settingPageWidget.cs:425
+#: ../client/gtk-gui/client.editDesktopPageWidget.cs:150
+msgid "600 X 480"
+msgstr ""
+
+#: ../client/gtk-gui/client.settingPageWidget.cs:426
+#: ../client/gtk-gui/client.editDesktopPageWidget.cs:151
+msgid "800 X 600"
+msgstr ""
+
+#: ../client/gtk-gui/client.settingPageWidget.cs:427
+#: ../client/gtk-gui/client.editDesktopPageWidget.cs:152
+msgid "1024 X 768"
+msgstr ""
+
+#: ../client/gtk-gui/client.settingPageWidget.cs:428
+#: ../client/gtk-gui/client.editDesktopPageWidget.cs:153
+msgid "1280 X 768"
+msgstr ""
+
+#: ../client/gtk-gui/client.settingPageWidget.cs:429
+#: ../client/gtk-gui/client.editDesktopPageWidget.cs:154
+msgid "1280 X 1024"
+msgstr ""
+
+#: ../client/gtk-gui/client.settingPageWidget.cs:430
+#: ../client/gtk-gui/client.editDesktopPageWidget.cs:155
+msgid "1440 X 900"
+msgstr ""
+
+#: ../client/gtk-gui/client.settingPageWidget.cs:431
+#: ../client/gtk-gui/client.editDesktopPageWidget.cs:156
+msgid "1600 X 900"
+msgstr ""
+
+#: ../client/gtk-gui/client.settingPageWidget.cs:432
+#: ../client/gtk-gui/client.editDesktopPageWidget.cs:157
+msgid "1600 X 1200"
+msgstr ""
+
+#: ../client/gtk-gui/client.settingPageWidget.cs:433
+#: ../client/gtk-gui/client.editDesktopPageWidget.cs:158
+msgid "1920 X 1080"
+msgstr ""
+
+#: ../client/gtk-gui/client.settingPageWidget.cs:434
+#: ../client/gtk-gui/client.editDesktopPageWidget.cs:159
+msgid "Full Screen"
+msgstr "전체 화면"
+
+#: ../client/gtk-gui/client.settingPageWidget.cs:442
+#: ../client/gtk-gui/client.editDesktopPageWidget.cs:188
+msgid "auto"
+msgstr "자동 검출"
+
+#: ../client/gtk-gui/client.settingPageWidget.cs:443
+#: ../client/gtk-gui/client.editDesktopPageWidget.cs:189
+msgid "modem"
+msgstr "모뎀"
+
+#: ../client/gtk-gui/client.settingPageWidget.cs:444
+#: ../client/gtk-gui/client.editDesktopPageWidget.cs:190
+msgid "broadband"
+msgstr "광대역"
+
+#: ../client/gtk-gui/client.settingPageWidget.cs:445
+#: ../client/gtk-gui/client.editDesktopPageWidget.cs:191
+msgid "broadband-low"
+msgstr "저속 광대역"
+
+#: ../client/gtk-gui/client.settingPageWidget.cs:446
+#: ../client/gtk-gui/client.editDesktopPageWidget.cs:192
+msgid "broadband-high"
+msgstr "고속 광대역"
+
+#: ../client/gtk-gui/client.settingPageWidget.cs:447
+#: ../client/gtk-gui/client.editDesktopPageWidget.cs:193
+msgid "wan"
+msgstr ""
+
+#: ../client/gtk-gui/client.settingPageWidget.cs:448
+#: ../client/gtk-gui/client.editDesktopPageWidget.cs:194
+msgid "lan"
+msgstr ""
+
+#: ../client/gtk-gui/client.settingPageWidget.cs:457
+msgid "Color Depth"
+msgstr "색 농도"
+
+#: ../client/gtk-gui/client.settingPageWidget.cs:464
+msgid "High Color(15 bpp)"
+msgstr ""
+
+#: ../client/gtk-gui/client.settingPageWidget.cs:465
+msgid "High Color(16 bpp)"
+msgstr ""
+
+#: ../client/gtk-gui/client.settingPageWidget.cs:466
+msgid "True Color(24 bpp)"
+msgstr ""
+
+#: ../client/gtk-gui/client.settingPageWidget.cs:467
+msgid "True Color(32 bpp)"
+msgstr ""
+
+#: ../client/gtk-gui/client.settingPageWidget.cs:477
+msgid "DynamicResolution"
+msgstr "동적해상도"
+
+#: ../client/gtk-gui/client.settingPageWidget.cs:490
+msgid "Desktop"
+msgstr "데스크톱"
+
+#: ../client/gtk-gui/client.settingPageWidget.cs:500
+msgid "Redirect"
+msgstr "로컬 리소스"
+
+#: ../client/gtk-gui/client.settingPageWidget.cs:508
+msgid "Performance"
+msgstr "성능"
+
+#: ../client/gtk-gui/client.settingPageWidget.cs:516
+msgid "Audio Capture"
+msgstr "오디오 캡처"
+
+#: ../client/gtk-gui/client.settingPageWidget.cs:525
+msgid "Clipboard"
+msgstr "클립보드"
+
+#: ../client/gtk-gui/client.settingPageWidget.cs:535
+msgid "Local Printer"
+msgstr "로컬 프린터"
+
+#: ../client/gtk-gui/client.settingPageWidget.cs:545
+msgid "Local Driver"
+msgstr "로컬 드라이브"
+
+#: ../client/gtk-gui/client.settingPageWidget.cs:555
+msgid "Local Device"
+msgstr "로컬 디바이스"
+
+#: ../client/gtk-gui/client.settingPageWidget.cs:565
+msgid "Local Port"
+msgstr "로컬 포트"
+
+#: ../client/gtk-gui/client.settingPageWidget.cs:575
+msgid "Smart Card"
+msgstr "스마트 카드"
+
+#: ../client/gtk-gui/client.settingPageWidget.cs:585
+msgid "Bitmap Caching"
+msgstr "비트맵 캐싱"
+
+#: ../client/gtk-gui/client.settingPageWidget.cs:595
+msgid "Local Microphone"
+msgstr "로컬 마이크"
+
+#: ../client/gtk-gui/client.settingPageWidget.cs:605
+msgid "Video Capture Device"
+msgstr "비디오 캡처장치"
+
+#: ../client/gtk-gui/client.settingPageWidget.cs:616
+msgid "Use RDPECAM"
+msgstr "RDPECAM 사용"
+
+#: ../client/gtk-gui/client.settingPageWidget.cs:626
+msgid "Webcam setting"
+msgstr "웹캠 설정"
+
+#: ../client/gtk-gui/client.settingPageWidget.cs:635
+msgid "Use H264"
+msgstr "H264 사용"
+
+#: ../client/gtk-gui/client.settingPageWidget.cs:648
+msgid "Resource"
+msgstr "리소스"
+
+#: ../client/gtk-gui/client.settingPageWidget.cs:667
+msgid "Use External RDPViewer"
+msgstr "외부 RDPViewer 사용"
+
+#: ../client/gtk-gui/client.settingPageWidget.cs:680
+msgid "Others"
+msgstr "기타"
+
+#: ../client/serverlistWidget.cs:32 ../client/addServerPageWidget.cs:29
+msgid "Add Server"
+msgstr "서버 추가"
+
+#: ../client/serverlistWidget.cs:103
+msgid "Server IP가 유효하지 않습니다."
+msgstr ""
+
+#: ../client/serverlistWidget.cs:108
+msgid "Server Port가 유효하지 않습니다."
+msgstr ""
+
+#: ../client/serverlistWidget.cs:236
+msgid "Bookmark에 맞는 서버 정보가 존재하지 않습니다."
+msgstr ""
+
+#: ../client/serverlistWidget.cs:277
+msgid "기존 로그인 된 서버를 로그아웃 하시겠습니까?"
+msgstr ""
+
+#: ../client/gtk-gui/client.serverlistWidget.cs:60
+msgid "ADD SERVER"
+msgstr "서버 추가"
+
+#: ../client/addServerPageWidget.cs:30
+#: ../client/gtk-gui/client.addServerPageWidget.cs:142
+msgid "ADD"
+msgstr "추가"
+
+#: ../client/addServerPageWidget.cs:38 ../client/serverItemWidget.cs:51
+msgid "Edit Server"
+msgstr "서버 수정"
+
+#: ../client/addServerPageWidget.cs:39
+#: ../client/gtk-gui/client.serverItemWidget.cs:170
+#: ../client/gtk-gui/client.desktopItemWidget.cs:185
+msgid "EDIT"
+msgstr "수정"
+
+#: ../client/gtk-gui/client.addServerPageWidget.cs:50
+msgid "<span size='14000'>Add Server</span>"
+msgstr "<span size='14000'>서버 추가</span>"
+
+#: ../client/gtk-gui/client.addServerPageWidget.cs:73
+#: ../client/gtk-gui/client.logInWidget.cs:74
+msgid "Server IP"
+msgstr "서버 IP"
+
+#: ../client/gtk-gui/client.addServerPageWidget.cs:84
+#: ../client/gtk-gui/client.logInWidget.cs:82
+msgid "Server Port"
+msgstr "서버 Port"
+
+#: ../client/gtk-gui/client.addServerPageWidget.cs:131
+#: ../client/gtk-gui/client.logInWidget.cs:168
+#: ../client/gtk-gui/client.editDesktopPageWidget.cs:206
+msgid "CANCEL"
+msgstr "취소"
+
+#: ../client/serverItemWidget.cs:45
+msgid "Log In"
+msgstr "로그인"
+
+#: ../client/serverItemWidget.cs:47
+msgid "Log Out"
+msgstr "로그아웃"
+
+#: ../client/serverItemWidget.cs:53
+msgid "Remove Server"
+msgstr "서버 삭제"
+
+#: ../client/serverItemWidget.cs:163
+msgid "LOGOUT"
+msgstr "로그아웃"
+
+#: ../client/serverItemWidget.cs:206
+msgid "Logout 하시겠습니까?"
+msgstr ""
+
+#: ../client/serverItemWidget.cs:212
+#: ../client/gtk-gui/client.serverItemWidget.cs:181
+#: ../client/gtk-gui/client.logInWidget.cs:179
+msgid "LOGIN"
+msgstr "로그인"
+
+#: ../client/serverItemWidget.cs:262
+msgid "서버 정보를 삭제하시겠습니까?"
+msgstr ""
+
+#: ../client/gtk-gui/client.serverItemWidget.cs:74
+#: ../client/gtk-gui/client.desktopItemWidget.cs:93
+#: ../client/gtk-gui/client.bookmarkItemWidget.cs:83
+msgid "label3"
+msgstr ""
+
+#: ../client/gtk-gui/client.serverItemWidget.cs:86
+msgid "label4"
+msgstr ""
+
+#: ../client/gtk-gui/client.serverItemWidget.cs:105
+#: ../client/gtk-gui/client.desktopItemWidget.cs:82
+msgid "<span size='15000'>big text</span>"
+msgstr ""
+
+#: ../client/gtk-gui/client.serverItemWidget.cs:127
+msgid "<span size='9000'>Last Access Time</span>"
+msgstr "<span size='9000'>최근 접속 시간</span>"
+
+#: ../client/gtk-gui/client.serverItemWidget.cs:138
+msgid "<span size='9000'>Server State</span>"
+msgstr "<span size='9000'>서버 상태</span>"
+
+#: ../client/gtk-gui/client.serverItemWidget.cs:148
+#: ../client/gtk-gui/client.serverItemWidget.cs:191
+msgid "<span size='9000'>label</span>"
+msgstr ""
+
+#: ../client/gtk-gui/client.serverItemWidget.cs:160
+msgid "REMOVE"
+msgstr "삭제"
+
+#: ../client/gtk-gui/client.logInWidget.cs:57
+msgid "<span size='14000'>Login</span>"
+msgstr "<span size='14000'>로그인</span>"
+
+#: ../client/gtk-gui/client.logInWidget.cs:90
+msgid "User ID"
+msgstr "사용자 ID"
+
+#: ../client/gtk-gui/client.logInWidget.cs:98
+msgid "Password"
+msgstr "패스워드"
+
+#: ../client/gtk-gui/client.logInWidget.cs:188
+msgid "Remember ID"
+msgstr "아이디 저장"
+
+#: ../client/editDesktopPageWidget.cs:47
+msgid "변경된 내용을 저장하시겠습니까?"
+msgstr ""
+
+#: ../client/gtk-gui/client.editDesktopPageWidget.cs:65
+msgid "Name"
+msgstr "이름"
+
+#: ../client/gtk-gui/client.editDesktopPageWidget.cs:73
+msgid "IP"
+msgstr "IP"
+
+#: ../client/gtk-gui/client.editDesktopPageWidget.cs:81
+msgid "Type"
+msgstr "형태"
+
+#: ../client/gtk-gui/client.editDesktopPageWidget.cs:167
+msgid "on"
+msgstr ""
+
+#: ../client/gtk-gui/client.editDesktopPageWidget.cs:177
+msgid "off"
+msgstr ""
+
+#: ../client/gtk-gui/client.editDesktopPageWidget.cs:217
+#: ../client/gtk-gui/client.desktopPolicyWidget.cs:53
+msgid "OK"
+msgstr "확인"
+
+#: ../client/gtk-gui/client.editDesktopPageWidget.cs:235
+msgid "<span size='14000'>Edit Desktop Attributes</span>"
+msgstr "<span size='14000'>데스트톱 속성 변경</span>"
+
+#: ../client/gtk-gui/client.desktopPolicyWidget.cs:41
+msgid "<span size='14000'>Desktop Policies</span>"
+msgstr "<span size='14000'>데스트톱 속성</span>"
+
+#: ../client/gtk-gui/client.desktopPolicyWidget.cs:84
+msgid "label1"
+msgstr ""
+
+#: ../client/desktopItemWidget.cs:183
+#: ../client/gtk-gui/client.desktopItemWidget.cs:153
+msgid "<span size='9000'>Desktop</span>"
+msgstr "<span size='9000'>데스크톱</span>"
+
+#: ../client/desktopItemWidget.cs:349
+msgid "DISCONNECT"
+msgstr "연결해제"
+
+#: ../client/desktopItemWidget.cs:355 ../client/desktopItemWidget.cs:553
+#: ../client/gtk-gui/client.desktopItemWidget.cs:196
+msgid "CONNECT"
+msgstr "연결"
+
+#: ../client/desktopItemWidget.cs:367
+msgid "Connect Desktop"
+msgstr "데스크톱 연결"
+
+#: ../client/desktopItemWidget.cs:369
+msgid "Disconnect Desktop"
+msgstr "데스크톱 연결 해제"
+
+#: ../client/desktopItemWidget.cs:371
+msgid "Edit Desktop Attributes"
+msgstr "데스크톱 속성 변경"
+
+#: ../client/desktopItemWidget.cs:373
+msgid "View Desktop Properties"
+msgstr "데스크톱 속성 보기"
+
+#: ../client/desktopItemWidget.cs:375
+msgid "Refresh Desktop Status"
+msgstr "데스크톱 상태 새로고침"
+
+#: ../client/desktopItemWidget.cs:379
+msgid "Power Control"
+msgstr "전원 제어"
+
+#: ../client/desktopItemWidget.cs:383
+msgid "Power On"
+msgstr "전원 켜기"
+
+#: ../client/desktopItemWidget.cs:385
+msgid "Power Off"
+msgstr "전원 끄기"
+
+#: ../client/desktopItemWidget.cs:388
+msgid "System Reset"
+msgstr "전원 리셋"
+
+#: ../client/desktopItemWidget.cs:396
+msgid "System Control"
+msgstr "시스템 제어"
+
+#: ../client/desktopItemWidget.cs:400
+msgid "System Shutdown"
+msgstr "시스템 종료"
+
+#: ../client/desktopItemWidget.cs:402
+msgid "System Reboot"
+msgstr "시스템 재시작"
+
+#: ../client/desktopItemWidget.cs:407
+msgid "Add to Bookmark"
+msgstr "북마크 추가"
+
+#: ../client/desktopItemWidget.cs:410
+msgid "Set to Auto Start"
+msgstr "자동 연결 설정"
+
+#: ../client/desktopItemWidget.cs:476
+msgid "전원 켜기를 실행 하시겠습니까?"
+msgstr ""
+
+#: ../client/desktopItemWidget.cs:486
+msgid "전원 끄기를 실행 하시겠습니까?"
+msgstr ""
+
+#: ../client/desktopItemWidget.cs:496
+msgid "전원 리셋을 실행 하시겠습니까?"
+msgstr ""
+
+#: ../client/desktopItemWidget.cs:506
+msgid "시스템 종료를 실행 하시겠습니까?"
+msgstr ""
+
+#: ../client/desktopItemWidget.cs:516
+msgid "시스템 리부팅을 실행 하시겠습니까?"
+msgstr ""
+
+#: ../client/desktopItemWidget.cs:529
+msgid "Bookmark를 추가하시겠습니까?"
+msgstr ""
+
+#: ../client/gtk-gui/client.desktopItemWidget.cs:141
+msgid "<span size='9000'>Status</span>"
+msgstr "<span size='9000'>연결상태</span>"
+
+#: ../client/gtk-gui/client.desktopItemWidget.cs:163
+#: ../client/gtk-gui/client.desktopItemWidget.cs:206
+#: ../client/gtk-gui/client.desktopItemWidget.cs:243
+#: ../client/gtk-gui/client.desktopItemWidget.cs:254
+msgid "<span size='9000'>Label</span>"
+msgstr ""
+
+#: ../client/gtk-gui/client.desktopItemWidget.cs:175
+msgid "POLICY"
+msgstr "속성"
+
+#: ../client/gtk-gui/client.desktopItemWidget.cs:219
+msgid "<span size='9000'>Power</span>"
+msgstr "<span size='9000'>전원</span>"
+
+#: ../client/gtk-gui/client.desktopItemWidget.cs:232
+msgid "<span size='9000'>Agent</span>"
+msgstr "<span size='9000'>에이전트</span>"
+
+#: ../client/desktoplistWidget.cs:110
+msgid "Bookmark에 맞는 데스크탑 정보가 존재하지 않습니다."
+msgstr ""
+
+#: ../client/bookmarkItemWidget.cs:114
+msgid "Remove Bookmark"
+msgstr "북마크 삭제"
+
+#: ../client/gtk-gui/client.bookmarkItemWidget.cs:49
+msgid "<span size='15000'>label1</span>"
+msgstr ""
+
+#: ../client/gtk-gui/client.bookmarkItemWidget.cs:74
+msgid "<span size='15000'>label2</span>"
+msgstr ""
+
+#: ../client/gtk-gui/client.PopupMessageDialog.cs:38
+msgid "2023-02-22 13:00:00"
+msgstr ""
+
+#: ../client/ErrorHandlerManager.cs:73 ../client/ErrorHandlerManager.cs:172
+msgid "데스크톱 접속서비스 상태가 아닙니다."
+msgstr ""
+
+#: ../client/ErrorHandlerManager.cs:77
+msgid "데스크톱 접속서비스 등록상태가 아닙니다."
+msgstr ""
+
+#: ../client/ErrorHandlerManager.cs:82
+msgid "인증 토큰이 변조되었습니다."
+msgstr ""
+
+#: ../client/ErrorHandlerManager.cs:87
+msgid "인증 토큰 유효시간이 만료되었습니다."
+msgstr ""
+
+#: ../client/ErrorHandlerManager.cs:92
+msgid "인증 토큰 검증에 실패하였습니다."
+msgstr ""
+
+#: ../client/ErrorHandlerManager.cs:97
+msgid "인증 토큰 재발행에 실패하였습니다."
+msgstr ""
+
+#: ../client/ErrorHandlerManager.cs:102 ../client/ErrorHandlerManager.cs:117
+#: ../client/ErrorHandlerManager.cs:122 ../client/ErrorHandlerManager.cs:179
+#: ../client/ErrorHandlerManager.cs:182 ../client/ErrorHandlerManager.cs:185
+#: ../client/ErrorHandlerManager.cs:188 ../client/ErrorHandlerManager.cs:191
+#: ../client/ErrorHandlerManager.cs:194
+msgid "로그인 인증에 실패했습니다."
+msgstr ""
+
+#: ../client/ErrorHandlerManager.cs:107
+msgid "접근 제한된 클라이언트 정보입니다."
+msgstr ""
+
+#: ../client/ErrorHandlerManager.cs:112
+msgid "로그인 인증 제한 회수에 도달했습니다."
+msgstr ""
+
+#: ../client/ErrorHandlerManager.cs:127
+msgid "정상적인 로그아웃 처리에 실패했습니다."
+msgstr ""
+
+#: ../client/ErrorHandlerManager.cs:132
+msgid "계정 인증에 실패했습니다."
+msgstr ""
+
+#: ../client/ErrorHandlerManager.cs:137
+msgid "암호 복잡도를 만족하지 않습니다."
+msgstr ""
+
+#: ../client/ErrorHandlerManager.cs:142
+msgid "로그 기록에 실패했습니다."
+msgstr ""
+
+#: ../client/ErrorHandlerManager.cs:147
+msgid "접속 가능한 데스크톱이 없습니다."
+msgstr ""
+
+#: ../client/ErrorHandlerManager.cs:152
+msgid "데스크톱 전원 제어를 실패했습니다."
+msgstr ""
+
+#: ../client/ErrorHandlerManager.cs:157
+msgid "데스크톱 풀 정보 조회가 실패했습니다."
+msgstr ""
+
+#: ../client/ErrorHandlerManager.cs:162
+msgid "추천 접속서버정보 조회에 실패했습니다."
+msgstr ""
+
+#: ../client/ErrorHandlerManager.cs:167
+msgid "무결성 검증에 실패했습니다."
+msgstr ""
+
+#: ../client/ErrorHandlerManager.cs:176 ../client/ErrorHandlerManager.cs:223
+msgid "알 수 없는 에러입니다."
+msgstr ""
+
+#: ../client/ErrorHandlerManager.cs:205
+msgid "Agent USB 연동 실패하였습니다."
+msgstr ""
+
+#: ../client/ErrorHandlerManager.cs:211
+msgid "DBUS USB 연동 실패하였습니다."
+msgstr ""
+
+#: ../client/ErrorHandlerManager.cs:217
+msgid "WEBCAM 장치 연동 실패하였습니다."
+msgstr ""
+
+#: ../client/gtk-gui/client.leftMenuItemWidget.cs:44
+msgid "<span size='15500'>HOME</span>"
+msgstr ""
+
+#: ../client/gtk-gui/client.ChangePasswordDialog.cs:45
+msgid "Apply"
+msgstr ""
+
+#: ../client/gtk-gui/client.ChangePasswordDialog.cs:55
+msgid "Cancel"
+msgstr ""
+
+#: ../client/gtk-gui/client.ChangePasswordWidget.cs:45
+msgid "<span size='14000'>Change Password</span>"
+msgstr "<span size='9000'>비밀번호 변경</span>"
+
+#: ../client/gtk-gui/client.ChangePasswordWidget.cs:64
+msgid "Current Password"
+msgstr "패스워드"
+
+#: ../client/gtk-gui/client.ChangePasswordWidget.cs:72
+msgid "Confirm New Password"
+msgstr "새 패스워드 확인"
+
+#: ../client/gtk-gui/client.ChangePasswordWidget.cs:91
+msgid "New Password"
+msgstr "새 패스워드"
+
+#: ../client/gtk-gui/client.ChangePasswordWidget.cs:112
+msgid "Error"
+msgstr ""
+
+#: ../client/gtk-gui/client.ChangePasswordWidget.cs:122
+msgid "Reason"
+msgstr ""
+
+#: ../client/MainWindow.Functions.cs:207
+msgid "Please enter your current password correctly."
+msgstr ""
+
+#: ../client/MainWindow.Functions.cs:210
+msgid ""
+"Password must be rewritten (at least 9 characters, use upper and lower case "
+"letters, numbers and special characters)."
+msgstr ""
+
+#: ../client/MainWindow.Functions.cs:213
+msgid ""
+"Password must be rewritten (repeatedly typing the same letters and numbers)."
+msgstr ""
+
+#: ../client/MainWindow.Functions.cs:216
+msgid ""
+"Password needs to be rewritten (sequential input of consecutive letters or "
+"numbers on the keyboard)."
+msgstr ""
+
+#: ../client/MainWindow.Functions.cs:219
+msgid "Same as the current password."
+msgstr ""
+
+#: ../client/MainWindow.Functions.cs:222
+msgid "Same as the user ID."
+msgstr ""
+
+#: ../client/MainWindow.Functions.cs:225
+msgid "Same as the initial password."
+msgstr ""
+
+#: ../client/MainWindow.Functions.cs:228
+msgid "Last used password. It needs to be rewritten."
+msgstr ""
+
+#: ../client/MainWindow.Functions.cs:231
+msgid "An error occurred when processing the password change."
+msgstr ""
+
+#: ../client/gtk-gui/client.InfoWindow.cs:22
+msgid "Version Information"
+msgstr ""
+
+#: ../client/gtk-gui/client.InfoWindow.cs:34
+msgid "dxClient Version"
+msgstr ""
+
+#: ../client/gtk-gui/client.InfoWindow.cs:44
+msgid "DaaSXpert Ver. 3.0"
+msgstr ""
+
+#: ../client/gtk-gui/client.InfoWindow.cs:54
+msgid "File Version : 3.0.0.000"
+msgstr ""
+
+#: ../client/gtk-gui/client.InfoWindow.cs:63
+msgid "Build Date 0000-00-00"
+msgstr ""
+
+#~ msgid "MainWindow"
+#~ msgstr "DasSXpert Client"
+
+#~ msgid "LableState....."
+#~ msgstr "상태1"

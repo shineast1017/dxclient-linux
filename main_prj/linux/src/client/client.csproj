@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A3817E3F-8205-4C47-9E4E-8300DFC7FF72}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <RootNamespace>client</RootNamespace>
+    <ApplicationIcon>Resources\daasxpert_icon_256_4uI_icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="gtk-sharp, Version=2.4.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <Package>gtk-sharp-2.0</Package>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="gdk-sharp, Version=2.4.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <Package>gtk-sharp-2.0</Package>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="glib-sharp, Version=2.4.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <Package>glib-sharp-2.0</Package>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="glade-sharp, Version=2.4.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <SpecificVersion>False</SpecificVersion>
+      <Package>glade-sharp-2.0</Package>
+    </Reference>
+    <Reference Include="pango-sharp, Version=2.4.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <Package>gtk-sharp-2.0</Package>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="atk-sharp, Version=2.4.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <Package>gtk-sharp-2.0</Package>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Mono.Posix" />
+    <Reference Include="log4net">
+      <HintPath>..\packages\log4net.2.0.8\lib\net45-full\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="libstetic">
+      <HintPath>..\..\..\..\..\..\..\..\lib\monodevelop\AddIns\MonoDevelop.GtkCore\libstetic.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.3\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="mscorlib" />
+    <Reference Include="System.Security.Principal.Windows">
+      <HintPath>..\packages\System.Security.Principal.Windows.4.7.0\lib\net461\System.Security.Principal.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.6.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Tmds.DBus">
+      <HintPath>..\packages\Tmds.DBus.0.11.0\lib\netstandard2.0\Tmds.DBus.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="gtk-gui\gui.stetic">
+      <LogicalName>gui.stetic</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\dassxpert_logo.png" />
+    <EmbeddedResource Include="Resources\icon_add_enable.png" />
+    <EmbeddedResource Include="Resources\icon_broker_enable.png" />
+    <EmbeddedResource Include="Resources\server_arrow_enable.png" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\icon_dt_win10_enable.png" />
+    <EmbeddedResource Include="Resources\banner.png" />
+    <EmbeddedResource Include="Resources\bookmark_arrow_enable.png" />
+    <EmbeddedResource Include="Resources\daasxpert_icon_256_4uI_icon.ico" />
+    <EmbeddedResource Include="Resources\daasxpert.icon-32.png" />
+    <EmbeddedResource Include="Resources\daasxpert.icon-48.png" />
+    <EmbeddedResource Include="Resources\icon_broker_disable.png" />
+    <EmbeddedResource Include="Resources\icon_broker_focus.png" />
+    <EmbeddedResource Include="Resources\icon_broker_over.png" />
+    <EmbeddedResource Include="Resources\icon_broker_push.png" />
+    <EmbeddedResource Include="Resources\icon_broker_selected.png" />
+    <EmbeddedResource Include="Resources\server_arrow_disable.png" />
+    <EmbeddedResource Include="Resources\server_arrow_focus.png" />
+    <EmbeddedResource Include="Resources\server_arrow_over.png" />
+    <EmbeddedResource Include="Resources\server_arrow_push.png" />
+    <EmbeddedResource Include="Resources\server_arrow_selected.png" />
+    <EmbeddedResource Include="Resources\icon_bookmark_disable.png" />
+    <EmbeddedResource Include="Resources\icon_bookmark_enable.png" />
+    <EmbeddedResource Include="Resources\icon_bookmark_over.png" />
+    <EmbeddedResource Include="Resources\icon_bookmark_selected.png" />
+    <EmbeddedResource Include="Resources\icon_home_disable.png" />
+    <EmbeddedResource Include="Resources\icon_home_enable.png" />
+    <EmbeddedResource Include="Resources\icon_home_over.png" />
+    <EmbeddedResource Include="Resources\icon_home_selected.png" />
+    <EmbeddedResource Include="Resources\icon_setting_disable.png" />
+    <EmbeddedResource Include="Resources\icon_setting_enable.png" />
+    <EmbeddedResource Include="Resources\icon_setting_over.png" />
+    <EmbeddedResource Include="Resources\icon_setting_selected.png" />
+    <EmbeddedResource Include="Resources\icon_arrow_disable.png" />
+    <EmbeddedResource Include="Resources\icon_arrow_enable.png" />
+    <EmbeddedResource Include="Resources\icon_arrow_over.png" />
+    <EmbeddedResource Include="Resources\icon_arrow_selected.png" />
+    <EmbeddedResource Include="Resources\icon_add_disable.png" />
+    <EmbeddedResource Include="Resources\icon_add_over.png" />
+    <EmbeddedResource Include="Resources\icon_add_push.png" />
+    <EmbeddedResource Include="Resources\icon_autostart_disable.png" />
+    <EmbeddedResource Include="Resources\icon_autostart_enable.png" />
+    <EmbeddedResource Include="Resources\icon_autostart_over.png" />
+    <EmbeddedResource Include="Resources\icon_autostart_select.png" />
+    <EmbeddedResource Include="Resources\icon_dt_centos_disable.png" />
+    <EmbeddedResource Include="Resources\icon_dt_centos_enable.png" />
+    <EmbeddedResource Include="Resources\icon_dt_centos_over.png" />
+    <EmbeddedResource Include="Resources\icon_dt_centos_select.png" />
+    <EmbeddedResource Include="Resources\icon_dt_ubuntu_disable.png" />
+    <EmbeddedResource Include="Resources\icon_dt_ubuntu_enable.png" />
+    <EmbeddedResource Include="Resources\icon_dt_ubuntu_over.png" />
+    <EmbeddedResource Include="Resources\icon_dt_ubuntu_select.png" />
+    <EmbeddedResource Include="Resources\icon_dt_win7_disable.png" />
+    <EmbeddedResource Include="Resources\icon_dt_win7_enable.png" />
+    <EmbeddedResource Include="Resources\icon_dt_win7_over.png" />
+    <EmbeddedResource Include="Resources\icon_dt_win7_select.png" />
+    <EmbeddedResource Include="Resources\icon_dt_win10_disable.png" />
+    <EmbeddedResource Include="Resources\icon_dt_win10_over.png" />
+    <EmbeddedResource Include="Resources\icon_dt_win10_select.png" />
+    <EmbeddedResource Include="Resources\icon_share_disable.png" />
+    <EmbeddedResource Include="Resources\icon_share_enable.png" />
+    <EmbeddedResource Include="Resources\icon_share_over.png" />
+    <EmbeddedResource Include="Resources\icon_share_select.png" />
+    <EmbeddedResource Include="Resources\switch_2_off.png" />
+    <EmbeddedResource Include="Resources\switch_2_on.png" />
+    <EmbeddedResource Include="Resources\bookmark_arrow_over.png" />
+    <EmbeddedResource Include="Resources\dassxpert_icon.png" />
+    <EmbeddedResource Include="Resources\window_close.png" />
+    <EmbeddedResource Include="Resources\window_close_over.png" />
+    <EmbeddedResource Include="Resources\icon_dt_tmax_disable.png" />
+    <EmbeddedResource Include="Resources\icon_dt_tmax_enable.png" />
+    <EmbeddedResource Include="Resources\icon_dt_tmax_over.png" />
+    <EmbeddedResource Include="Resources\icon_dt_tmax_select.png" />
+    <EmbeddedResource Include="Resources\icon_dt_hancom_disable.png" />
+    <EmbeddedResource Include="Resources\icon_dt_hancom_enable.png" />
+    <EmbeddedResource Include="Resources\icon_dt_hancom_over.png" />
+    <EmbeddedResource Include="Resources\icon_dt_hancom_select.png" />
+    <EmbeddedResource Include="Resources\icon_dt_hamonikr_select.png" />
+    <EmbeddedResource Include="Resources\icon_dt_hamonikr_over.png" />
+    <EmbeddedResource Include="Resources\icon_dt_hamonikr_enable.png" />
+    <EmbeddedResource Include="Resources\icon_dt_hamonikr_disable.png" />
+    <EmbeddedResource Include="Resources\mois_logo.png" />
+    <EmbeddedResource Include="Resources\leftMenu_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="gtk-gui\generated.cs" />
+    <Compile Include="MainWindow.cs" />
+    <Compile Include="gtk-gui\MainWindow.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="leftMenuWidget.cs" />
+    <Compile Include="gtk-gui\client.leftMenuWidget.cs" />
+    <Compile Include="mainPageWidget.cs" />
+    <Compile Include="gtk-gui\client.mainPageWidget.cs" />
+    <Compile Include="bookmarkPageWidget.cs" />
+    <Compile Include="settingPageWidget.cs" />
+    <Compile Include="gtk-gui\client.settingPageWidget.cs" />
+    <Compile Include="serverlistWidget.cs" />
+    <Compile Include="gtk-gui\client.serverlistWidget.cs" />
+    <Compile Include="addServerPageWidget.cs" />
+    <Compile Include="gtk-gui\client.bookmarkPageWidget.cs" />
+    <Compile Include="gtk-gui\client.addServerPageWidget.cs" />
+    <Compile Include="serverItemWidget.cs" />
+    <Compile Include="gtk-gui\client.serverItemWidget.cs" />
+    <Compile Include="func\function.cs" />
+    <Compile Include="ClientEnvironment.cs" />
+    <Compile Include="logInWidget.cs" />
+    <Compile Include="gtk-gui\client.logInWidget.cs" />
+    <Compile Include="func\RequestJSONParam.cs" />
+    <Compile Include="func\RequestToHCVKA.cs" />
+    <Compile Include="func\RequestToHCVKB.cs" />
+    <Compile Include="func\RequestToHCVKL.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="editDesktopPageWidget.cs" />
+    <Compile Include="gtk-gui\client.editDesktopPageWidget.cs" />
+    <Compile Include="desktopPolicyWidget.cs" />
+    <Compile Include="gtk-gui\client.desktopPolicyWidget.cs" />
+    <Compile Include="desktopItemWidget.cs" />
+    <Compile Include="gtk-gui\client.desktopItemWidget.cs" />
+    <Compile Include="desktoplistWidget.cs" />
+    <Compile Include="gtk-gui\client.desktoplistWidget.cs" />
+    <Compile Include="func\LogReport.cs" />
+    <Compile Include="bookmarkItemWidget.cs" />
+    <Compile Include="gtk-gui\client.bookmarkItemWidget.cs" />
+    <Compile Include="ConnectProcess.cs" />
+    <Compile Include="PopupMessageDialog.cs" />
+    <Compile Include="gtk-gui\client.PopupMessageDialog.cs" />
+    <Compile Include="ErrorHandlerManager.cs" />
+    <Compile Include="StyleSheet.cs" />
+    <Compile Include="leftMenuItemWidget.cs" />
+    <Compile Include="gtk-gui\client.leftMenuItemWidget.cs" />
+    <Compile Include="BrokerNoticeMsgManager.cs" />
+    <Compile Include="ChangePasswordDialog.cs" />
+    <Compile Include="gtk-gui\client.ChangePasswordDialog.cs" />
+    <Compile Include="ChangePasswordWidget.cs" />
+    <Compile Include="gtk-gui\client.ChangePasswordWidget.cs" />
+    <Compile Include="MainWindow.Functions.cs" />
+    <Compile Include="ServerStatusManager.cs" />
+    <Compile Include="MainWindow.EventHandler.cs" />
+    <Compile Include="InfoWindow.cs" />
+    <Compile Include="gtk-gui\client.InfoWindow.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+    <Folder Include="func\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\slibrary\HCVKSLibrary.csproj">
+      <Project>{0539F725-A08C-4DA1-B85F-CD4338CB8EF8}</Project>
+      <Name>HCVKSLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\MSBuild.Extension.Pack.1.9.1\build\net40\MSBuild.Extension.Pack.targets" Condition="Exists('..\packages\MSBuild.Extension.Pack.1.9.1\build\net40\MSBuild.Extension.Pack.targets')" />
+  <Import Project="..\packages\MSBuildTasks.1.5.0.235\build\MSBuildTasks.targets" Condition="Exists('..\packages\MSBuildTasks.1.5.0.235\build\MSBuildTasks.targets')" />
+</Project>
